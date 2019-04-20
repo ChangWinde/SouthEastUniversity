@@ -1,0 +1,33 @@
+* {
+    font-size: 18px;
+    font-family: 'Microsoft Yahei';
+    color: white;
+    border-radius: 5%;
+
+}
+
+QPushButton {
+    /*font-size: 18px;*/
+    /*font-family: SimHei;*/
+    background-color: rgba(190,190,190,70%);
+}
+
+QPushButton:hover{
+    background-color: rgba(230,230,230,70%);
+}
+
+QWidget {
+    /*background-image: url(geek.jpg);*/
+    /*background-repeat: no-repeat;*/
+    background-color: rgba(70, 70, 70,70%);
+}
+
+QLineEdit, QTextEdit {
+
+    background-color: rgba(10,10,10,90%);
+    border: 0px
+}
+
+QLabel {
+    text-align: center;
+}
