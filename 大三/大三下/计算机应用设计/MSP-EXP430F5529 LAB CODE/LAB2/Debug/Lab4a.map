@@ -1,0 +1,2456 @@
+******************************************************************************
+                  MSP430 Linker PC v4.0.0                      
+******************************************************************************
+>> Linked Wed Jul 18 21:31:28 2012
+
+OUTPUT FILE NAME:   <Lab4a.out>
+ENTRY POINT SYMBOL: "_c_int00"  address: 000045f0
+
+
+MEMORY CONFIGURATION
+
+         name            origin    length      used     unused   attr    fill
+----------------------  --------  ---------  --------  --------  ----  --------
+  SFR                   00000000   00000010  00000000  00000010  RWIX
+  PERIPHERALS_8BIT      00000010   000000f0  00000000  000000f0  RWIX
+  PERIPHERALS_16BIT     00000100   00000100  00000000  00000100  RWIX
+  INFOD                 00001800   00000080  00000000  00000080  RWIX
+  INFOC                 00001880   00000080  00000000  00000080  RWIX
+  INFOB                 00001900   00000080  00000000  00000080  RWIX
+  INFOA                 00001980   00000080  00000000  00000080  RWIX
+  RAM                   00002400   00002000  0000081e  000017e2  RWIX
+  FLASH                 00004400   0000bb80  000044e0  000076a0  RWIX
+  INT00                 0000ff80   00000002  00000000  00000002  RWIX
+  INT01                 0000ff82   00000002  00000000  00000002  RWIX
+  INT02                 0000ff84   00000002  00000000  00000002  RWIX
+  INT03                 0000ff86   00000002  00000000  00000002  RWIX
+  INT04                 0000ff88   00000002  00000000  00000002  RWIX
+  INT05                 0000ff8a   00000002  00000000  00000002  RWIX
+  INT06                 0000ff8c   00000002  00000000  00000002  RWIX
+  INT07                 0000ff8e   00000002  00000000  00000002  RWIX
+  INT08                 0000ff90   00000002  00000000  00000002  RWIX
+  INT09                 0000ff92   00000002  00000000  00000002  RWIX
+  INT10                 0000ff94   00000002  00000000  00000002  RWIX
+  INT11                 0000ff96   00000002  00000000  00000002  RWIX
+  INT12                 0000ff98   00000002  00000000  00000002  RWIX
+  INT13                 0000ff9a   00000002  00000000  00000002  RWIX
+  INT14                 0000ff9c   00000002  00000000  00000002  RWIX
+  INT15                 0000ff9e   00000002  00000000  00000002  RWIX
+  INT16                 0000ffa0   00000002  00000000  00000002  RWIX
+  INT17                 0000ffa2   00000002  00000000  00000002  RWIX
+  INT18                 0000ffa4   00000002  00000000  00000002  RWIX
+  INT19                 0000ffa6   00000002  00000000  00000002  RWIX
+  INT20                 0000ffa8   00000002  00000000  00000002  RWIX
+  INT21                 0000ffaa   00000002  00000000  00000002  RWIX
+  INT22                 0000ffac   00000002  00000000  00000002  RWIX
+  INT23                 0000ffae   00000002  00000000  00000002  RWIX
+  INT24                 0000ffb0   00000002  00000000  00000002  RWIX
+  INT25                 0000ffb2   00000002  00000000  00000002  RWIX
+  INT26                 0000ffb4   00000002  00000000  00000002  RWIX
+  INT27                 0000ffb6   00000002  00000000  00000002  RWIX
+  INT28                 0000ffb8   00000002  00000000  00000002  RWIX
+  INT29                 0000ffba   00000002  00000000  00000002  RWIX
+  INT30                 0000ffbc   00000002  00000000  00000002  RWIX
+  INT31                 0000ffbe   00000002  00000000  00000002  RWIX
+  INT32                 0000ffc0   00000002  00000000  00000002  RWIX
+  INT33                 0000ffc2   00000002  00000000  00000002  RWIX
+  INT34                 0000ffc4   00000002  00000000  00000002  RWIX
+  INT35                 0000ffc6   00000002  00000000  00000002  RWIX
+  INT36                 0000ffc8   00000002  00000000  00000002  RWIX
+  INT37                 0000ffca   00000002  00000000  00000002  RWIX
+  INT38                 0000ffcc   00000002  00000000  00000002  RWIX
+  INT39                 0000ffce   00000002  00000000  00000002  RWIX
+  INT40                 0000ffd0   00000002  00000000  00000002  RWIX
+  INT41                 0000ffd2   00000002  00000000  00000002  RWIX
+  INT42                 0000ffd4   00000002  00000002  00000000  RWIX
+  INT43                 0000ffd6   00000002  00000000  00000002  RWIX
+  INT44                 0000ffd8   00000002  00000000  00000002  RWIX
+  INT45                 0000ffda   00000002  00000000  00000002  RWIX
+  INT46                 0000ffdc   00000002  00000002  00000000  RWIX
+  INT47                 0000ffde   00000002  00000002  00000000  RWIX
+  INT48                 0000ffe0   00000002  00000000  00000002  RWIX
+  INT49                 0000ffe2   00000002  00000000  00000002  RWIX
+  INT50                 0000ffe4   00000002  00000000  00000002  RWIX
+  INT51                 0000ffe6   00000002  00000002  00000000  RWIX
+  INT52                 0000ffe8   00000002  00000000  00000002  RWIX
+  INT53                 0000ffea   00000002  00000002  00000000  RWIX
+  INT54                 0000ffec   00000002  00000002  00000000  RWIX
+  INT55                 0000ffee   00000002  00000000  00000002  RWIX
+  INT56                 0000fff0   00000002  00000000  00000002  RWIX
+  INT57                 0000fff2   00000002  00000002  00000000  RWIX
+  INT58                 0000fff4   00000002  00000000  00000002  RWIX
+  INT59                 0000fff6   00000002  00000000  00000002  RWIX
+  INT60                 0000fff8   00000002  00000000  00000002  RWIX
+  INT61                 0000fffa   00000002  00000000  00000002  RWIX
+  INT62                 0000fffc   00000002  00000000  00000002  RWIX
+  RESET                 0000fffe   00000002  00000002  00000000  RWIX
+  FLASH2                00010000   00014400  00000000  00014400  RWIX
+
+
+SECTION ALLOCATION MAP
+
+ output                                  attributes/
+section   page    origin      length       input sections
+--------  ----  ----------  ----------   ----------------
+.pinit     0    00004400    00000000     UNINITIALIZED
+
+.bss       0    00002400    0000077e     UNINITIALIZED
+                  00002400    00000346     MSP-EXP430F5529_UE.lib : HAL_Dogs102x6.obj (.bss)
+                  00002746    000001d6                            : UsbMscScsi.obj (.bss)
+                  0000291c    0000011a     Lab4.2.obj (.bss)
+                  00002a36    0000005f     Lab4.1.obj (.bss)
+                  00002a95    00000001     Lab4.3.obj (.bss)
+                  00002a96    00000048     MSP-EXP430F5529_UE.lib : usb.obj (.bss)
+                  00002ade    0000002e                            : UsbCdc.obj (.bss)
+                  00002b0c    00000024                            : UsbHid.obj (.bss)
+                  00002b30    0000001f     UsbMscUser.obj (.bss)
+                  00002b4f    00000008     MSP-EXP430F5529_UE.lib : HAL_Cma3000.obj (.bss)
+                  00002b57    00000001                            : UsbHidReq.obj (.bss)
+                  00002b58    00000008                            : dma.obj (.bss)
+                  00002b60    00000008     rts430xl.lib : _lock.obj (.bss)
+                  00002b68    00000008                  : boot.obj (.bss)
+                  00002b70    00000004     MSP-EXP430F5529_UE.lib : HAL_Buttons.obj (.bss)
+                  00002b74    00000004                            : HAL_Wheel.obj (.bss)
+                  00002b78    00000002                            : UsbMscReq.obj (.bss)
+                  00002b7a    00000002                            : UsbMscStateMachine.obj (.bss)
+                  00002b7c    00000002     lab4a.obj (.bss)
+
+.stack     0    00004360    000000a0     UNINITIALIZED
+                  00004360    00000004     rts430xl.lib : boot.obj (.stack)
+                  00004364    0000009c     --HOLE--
+
+.text:_isr 
+*          0    00004400    00000260     
+                  00004400    00000178     UsbIsr.obj (.text:_isr:iUsbInterruptHandler)
+                  00004578    0000003c     MSP-EXP430F5529_UE.lib : HAL_Buttons.obj (.text:_isr:Port1_ISR)
+                  000045b4    0000003c                            : HAL_Buttons.obj (.text:_isr:Port2_ISR)
+                  000045f0    0000002a     rts430xl.lib : boot.obj (.text:_isr:_c_int00_noexit)
+                  0000461a    0000001a     MSP-EXP430F5529_UE.lib : HAL_Buttons.obj (.text:_isr:WDT_ISR)
+                  00004634    00000016                            : HAL_Wheel.obj (.text:_isr:ADC12_ISR)
+                  0000464a    0000000e     Lab4.3.obj (.text:_isr:USCI_A1_ISR)
+                  00004658    00000008     lab4a.obj (.text:_isr:TimerA0_ISR)
+
+.cinit     0    00004660    00000112     
+                  00004660    00000052     MSP-EXP430F5529_UE.lib : UsbMscScsi.obj (.cinit)
+                  000046b2    00000036                            : HAL_Dogs102x6.obj (.cinit)
+                  000046e8    00000026     UsbMscUser.obj (.cinit)
+                  0000470e    00000021     MSP-EXP430F5529_UE.lib : UsbCdc.obj (.cinit)
+                  0000472f    00000001     --HOLE-- [fill = 0]
+                  00004730    00000017                            : usb.obj (.cinit)
+                  00004747    00000001     --HOLE-- [fill = 0]
+                  00004748    00000010                            : HAL_Buttons.obj (.cinit)
+                  00004758    00000008                            : UsbMscReq.obj (.cinit)
+                  00004760    00000008                            : UsbMscStateMachine.obj (.cinit)
+                  00004768    00000007     Lab4.1.obj (.cinit)
+                  0000476f    00000001     --HOLE-- [fill = 0]
+                  00004770    00000002     (.pad.cinit) [fill = 0]
+
+.text      0    00004772    000031da     
+                  00004772    000001e6     Lab4.2.obj (.text:Draw_LCD_CMA3000_vector)
+                  00004958    0000019e     MSP-EXP430F5529_UE.lib : UsbMscScsi.obj (.text:MSCFromHostToBuffer)
+                  00004af6    00000182                            : HAL_Dogs102x6.obj (.text:Dogs102x6_verticalLineDraw)
+                  00004c78    0000016e                            : UsbCdc.obj (.text:CdcToHostFromBuffer)
+                  00004de6    0000016e     lab4a.obj (.text:main)
+                  00004f54    0000016c     MSP-EXP430F5529_UE.lib : UsbHid.obj (.text:HidToHostFromBuffer)
+                  000050c0    00000162                            : UsbMscScsi.obj (.text:MSCToHostFromBuffer)
+                  00005222    0000015a                            : UsbHid.obj (.text:HidToBufferFromHost)
+                  0000537c    00000158                            : usb.obj (.text:USB_reset)
+                  000054d4    00000140                            : HAL_Dogs102x6.obj (.text:Dogs102x6_charDrawXY)
+                  00005614    0000012e                            : UsbCdc.obj (.text:CdcToBufferFromHost)
+                  00005742    000000e8     Lab4.1.obj (.text:SetFreq)
+                  0000582a    000000e4     MSP-EXP430F5529_UE.lib : HAL_Board.obj (.text:Board_init)
+                  0000590e    000000e4                            : HAL_UCS.obj (.text:Init_FLL)
+                  000059f2    000000ce                            : HAL_PMM.obj (.text:SetVCoreUp)
+                  00005ac0    000000c4                            : HAL_Dogs102x6.obj (.text:Dogs102x6_horizontalLineDraw)
+                  00005b84    000000bc     Lab4.3.obj (.text:eZ430App)
+                  00005c40    000000a2     MSP-EXP430F5529_UE.lib : HAL_Menu.obj (.text:Menu_active)
+                  00005ce2    000000a0     Lab4.1.obj (.text:ScopeApp)
+                  00005d82    0000009e     Lab4.2.obj (.text:Draw_LCD_CMA3000)
+                  00005e20    0000009a     MSP-EXP430F5529_UE.lib : HAL_Cma3000.obj (.text:Cma3000_init)
+                  00005eba    00000098                            : usb.obj (.text:usbDecodeAndProcessUsbRequest)
+                  00005f52    00000094     Lab4.2.obj (.text:MotionApp)
+                  00005fe6    0000008c     MSP-EXP430F5529_UE.lib : HAL_PMM.obj (.text:SetVCoreDown)
+                  00006072    0000008a                            : Settings.obj (.text:CalibrateAccel)
+                  000060fc    0000008a                            : HAL_Dogs102x6.obj (.text:Dogs102x6_charDraw)
+                  00006186    00000088                            : usb.obj (.text:USB_enable)
+                  0000620e    00000086     Lab4.1.obj (.text:AcquireSignal)
+                  00006294    00000084     MSP-EXP430F5529_UE.lib : UsbCdc.obj (.text:CopyUsbToBuff)
+                  00006318    00000084                            : UsbHid.obj (.text:HidCopyUsbToBuff)
+                  0000639c    00000082                            : HAL_Dogs102x6.obj (.text:Dogs102x6_pixelDraw)
+                  0000641e    00000080                            : Settings.obj (.text:ContrastSetting)
+                  0000649e    0000007e                            : Settings.obj (.text:Version)
+                  0000651c    0000007a                            : HAL_Dogs102x6.obj (.text:Dogs102x6_stringDraw)
+                  00006596    00000078                            : HAL_Dogs102x6.obj (.text:Dogs102x6_init)
+                  0000660e    00000074                            : Settings.obj (.text:BacklightSetting)
+                  00006682    00000074                            : usb.obj (.text:usbSendNextPacketOnIEP0)
+                  000066f6    00000070                            : usb.obj (.text:usbGetEndpointStatus)
+                  00006766    0000006e                            : HAL_Dogs102x6.obj (.text:Dogs102x6_writeData)
+                  000067d4    0000006e                            : UsbMscScsi.obj (.text:MscCopyUsbToBuff)
+                  00006842    00000068                            : usb.obj (.text:usbClearEndpointFeature)
+                  000068aa    00000064                            : UsbMscScsi.obj (.text:Msc_ResetStruct)
+                  0000690e    00000064                            : UsbMscScsi.obj (.text:Reset_RequestSenseResponse)
+                  00006972    00000064                            : Settings.obj (.text:WriteFlashSettings)
+                  000069d6    00000060                            : Settings.obj (.text:Settings)
+                  00006a36    0000005c     rts430xl.lib : autoinit.obj (.text:_auto_init)
+                  00006a92    00000058     MSP-EXP430F5529_UE.lib : HAL_Dogs102x6.obj (.text:Dogs102x6_setAddress)
+                  00006aea    00000054                            : HAL_Wheel.obj (.text:Wheel_getValue)
+                  00006b3e    0000004e                            : HAL_Board.obj (.text:Board_ledOff)
+                  00006b8c    0000004e                            : HAL_Board.obj (.text:Board_ledOn)
+                  00006bda    0000004e     UsbIsr.obj (.text:OEP0InterruptHandler)
+                  00006c28    0000004a     MSP-EXP430F5529_UE.lib : HAL_Cma3000.obj (.text:Cma3000_readRegister)
+                  00006c72    0000004a                            : HAL_Cma3000.obj (.text:Cma3000_writeRegister)
+                  00006cbc    0000004a     Lab4.1.obj (.text:DrawBox)
+                  00006d06    00000048     MSP-EXP430F5529_UE.lib : HAL_Dogs102x6.obj (.text:Dogs102x6_clearImage)
+                  00006d4e    00000048     UsbIsr.obj (.text:PWRVBUSoffHandler)
+                  00006d96    00000048     UsbIsr.obj (.text:SetupPacketInterruptHandler)
+                  00006dde    00000048     MSP-EXP430F5529_UE.lib : usb.obj (.text:usbReceiveNextPacketOnOEP0)
+                  00006e26    00000044     Lab4.1.obj (.text:PlotSignal)
+                  00006e6a    00000044     MSP-EXP430F5529_UE.lib : usb.obj (.text:usbGetStringDescriptor)
+                  00006eae    00000044                            : usb.obj (.text:usbSetEndpointFeature)
+                  00006ef2    00000042                            : UsbMscReq.obj (.text:USBMSC_reset)
+                  00006f34    00000040                            : HAL_Cma3000.obj (.text:Cma3000_readAccel)
+                  00006f74    00000040                            : HAL_Dogs102x6.obj (.text:Dogs102x6_imageDraw)
+                  00006fb4    00000040                            : UsbCdc.obj (.text:usbGetLineCoding0)
+                  00006ff4    00000040                            : usb.obj (.text:usbSetInterface)
+                  00007034    0000003e                            : HAL_Dogs102x6.obj (.text:Dogs102x6_setBacklight)
+                  00007072    0000003e                            : HAL_PMM.obj (.text:SetVCore)
+                  000070b0    0000003e     rts430xl.lib : lsl32.obj (.text:l_lsl_const)
+                  000070ee    0000003e                  : lsr32.obj (.text:l_lsr_const)
+                  0000712c    0000003c     MSP-EXP430F5529_UE.lib : HAL_Dogs102x6.obj (.text:Dogs102x6_writeCommand)
+                  00007168    00000038                            : HAL_UCS.obj (.text:LFXT_Start)
+                  000071a0    00000036                            : HAL_Dogs102x6.obj (.text:Dogs102x6_clearScreen)
+                  000071d6    00000036     UsbIsr.obj (.text:PWRVBUSonHandler)
+                  0000720c    00000036     MSP-EXP430F5529_UE.lib : HAL_Wheel.obj (.text:Wheel_getPosition)
+                  00007242    00000034                            : Settings.obj (.text:LEDTest)
+                  00007276    00000032                            : UsbCdc.obj (.text:CdcIsReceiveInProgress)
+                  000072a8    00000032                            : HAL_Dogs102x6.obj (.text:Dogs102x6_setContrast)
+                  000072da    00000032     Lab4.1.obj (.text:DrawGrid)
+                  0000730c    00000032     MSP-EXP430F5529_UE.lib : UsbHid.obj (.text:HidIsReceiveInProgress)
+                  0000733e    00000032                            : HAL_UCS.obj (.text:Init_FLL_Settle)
+                  00007370    00000032                            : usb.obj (.text:USB_suspend)
+                  000073a2    00000030                            : HAL_Dogs102x6.obj (.text:Dogs102x6_backlightInit)
+                  000073d2    00000030                            : HAL_UCS.obj (.text:XT2_Start)
+                  00007402    0000002e                            : UsbCdc.obj (.text:Handler_SetLineCoding0)
+                  00007430    0000002e                            : UsbCdc.obj (.text:Handler_SetLineCoding1)
+                  0000745e    0000002e                            : UsbCdc.obj (.text:Handler_SetLineCoding2)
+                  0000748c    0000002e                            : UsbMscScsi.obj (.text:MscResetData)
+                  000074ba    0000002c                            : UsbHidReq.obj (.text:usbGetHidDescriptor)
+                  000074e6    0000002a                            : UsbCdc.obj (.text:CdcResetData)
+                  00007510    0000002a                            : UsbHid.obj (.text:HidResetData)
+                  0000753a    0000002a     rts430xl.lib : memcpy.obj (.text:memcpy)
+                  00007564    00000028     MSP-EXP430F5529_UE.lib : usb.obj (.text:USB_connect)
+                  0000758c    00000028                            : usb.obj (.text:usbGetDeviceStatus)
+                  000075b4    00000026     Lab4.1.obj (.text:DrawLine_x)
+                  000075da    00000026     Lab4.1.obj (.text:DrawLine_y)
+                  00007600    00000026     MSP-EXP430F5529_UE.lib : HAL_Wheel.obj (.text:Wheel_init)
+                  00007626    00000024                            : HAL_Cma3000.obj (.text:Cma3000_disable)
+                  0000764a    00000022     rts430xl.lib : mult32_f5hw.obj (.text)
+                  0000766c    00000020                  : memset.obj (.text:memset)
+                  0000768c    00000020     MSP-EXP430F5529_UE.lib : usb.obj (.text:usbSendDataPacketOnEP0)
+                  000076ac    0000001e                            : usb.obj (.text:usbSetConfiguration)
+                  000076ca    0000001c     UsbIsr.obj (.text:IEP0InterruptHandler)
+                  000076e6    0000001a     MSP-EXP430F5529_UE.lib : usb.obj (.text:usbGetInterface)
+                  00007700    0000001a                            : usb.obj (.text:usbGetInterfaceStatus)
+                  0000771a    0000001a                            : usb.obj (.text:usbSetAddress)
+                  00007734    00000018                            : HAL_Cma3000.obj (.text:Cma3000_readAccel_offset)
+                  0000774c    00000018                            : UsbMscReq.obj (.text:Get_MaxLUN)
+                  00007764    00000018                            : usb.obj (.text:USB_resume)
+                  0000777c    00000016     rts430xl.lib : div16u.obj (.text)
+                  00007792    00000016                  : mult16_f5hw.obj (.text)
+                  000077a8    00000016     MSP-EXP430F5529_UE.lib : UsbHidReq.obj (.text:usbGetReport)
+                  000077be    00000014     usb_eventHandling.obj (.text:USB_handleVbusOnEvent)
+                  000077d2    00000012     MSP-EXP430F5529_UE.lib : HAL_Buttons.obj (.text:Buttons_interruptEnable)
+                  000077e4    00000012                            : usb.obj (.text:usbClearDeviceFeature)
+                  000077f6    00000012                            : usb.obj (.text:usbGetConfigurationDescriptor)
+                  00007808    00000012                            : usb.obj (.text:usbGetDeviceDescriptor)
+                  0000781a    00000012                            : usb.obj (.text:usbReceiveDataPacketOnEP0)
+                  0000782c    00000012                            : usb.obj (.text:usbSetDeviceFeature)
+                  0000783e    00000010                            : HAL_Buttons.obj (.text:Buttons_startWDT)
+                  0000784e    00000010                            : usb.obj (.text:usbGetConfiguration)
+                  0000785e    0000000e                            : HAL_Buttons.obj (.text:Buttons_init)
+                  0000786c    0000000e                            : HAL_Cma3000.obj (.text:Cma3000_setAccel_offset)
+                  0000787a    0000000e                            : UsbMscStateMachine.obj (.text:Msc_ResetStateMachine)
+                  00007888    0000000e                            : UsbHidReq.obj (.text:usbGetReportDescriptor)
+                  00007896    0000000e                            : usb.obj (.text:usbSendZeroLengthPacketOnIEP0)
+                  000078a4    0000000c                            : usb.obj (.text:usbInvalidRequest)
+                  000078b0    0000000a     system_pre_init.obj (.text:_system_pre_init)
+                  000078ba    0000000a     rts430xl.lib : asr16.obj (.text)
+                  000078c4    0000000a                  : lsl16.obj (.text)
+                  000078ce    0000000a                  : lsr16.obj (.text)
+                  000078d8    0000000a     MSP-EXP430F5529_UE.lib : usb.obj (.text:usbStallEndpoint0)
+                  000078e2    00000008                            : UsbHidReportHandler.obj (.text:Handler_InFeature)
+                  000078ea    00000008                            : UsbCdc.obj (.text:usbSetLineCoding0)
+                  000078f2    00000008                            : UsbHidReq.obj (.text:usbSetReport)
+                  000078fa    00000006                            : UsbMscScsi.obj (.text:Msc_ResetFlags)
+                  00007900    00000006                            : usb.obj (.text:usbClearOEP0ByteCount)
+                  00007906    00000006                            : usb.obj (.text:usbStallOEP0)
+                  0000790c    00000004     usb_eventHandling.obj (.text:USBCDC_handleDataReceived)
+                  00007910    00000004     usb_eventHandling.obj (.text:USBCDC_handleReceiveCompleted)
+                  00007914    00000004     usb_eventHandling.obj (.text:USBCDC_handleSendCompleted)
+                  00007918    00000004     usb_eventHandling.obj (.text:USBHID_handleDataReceived)
+                  0000791c    00000004     usb_eventHandling.obj (.text:USBHID_handleReceiveCompleted)
+                  00007920    00000004     usb_eventHandling.obj (.text:USBHID_handleSendCompleted)
+                  00007924    00000004     usb_eventHandling.obj (.text:USBMSC_handleBufferEvent)
+                  00007928    00000004     usb_eventHandling.obj (.text:USB_handleClockEvent)
+                  0000792c    00000004     usb_eventHandling.obj (.text:USB_handleEnumCompleteEvent)
+                  00007930    00000004     usb_eventHandling.obj (.text:USB_handleResetEvent)
+                  00007934    00000004     usb_eventHandling.obj (.text:USB_handleResumeEvent)
+                  00007938    00000004     usb_eventHandling.obj (.text:USB_handleSuspendEvent)
+                  0000793c    00000004     usb_eventHandling.obj (.text:USB_handleVbusOffEvent)
+                  00007940    00000004     rts430xl.lib : exit.obj (.text:abort)
+                  00007944    00000004     MSP-EXP430F5529_UE.lib : UsbCdc.obj (.text:usbSetControlLineState)
+                  00007948    00000002                            : UsbHidReportHandler.obj (.text:Handler_InReport)
+                  0000794a    00000002     rts430xl.lib : _lock.obj (.text:_nop)
+
+.const     0    0000794c    00000f94     
+                  0000794c    00000332     MSP-EXP430F5529_UE.lib : Settings.obj (.const:TIusb)
+                  00007c7e    0000024c                            : HAL_Dogs102x6.obj (.const:FONT6x8)
+                  00007eca    00000212     lab4a.obj (.const:tiBug)
+                  000080dc    0000015e     descriptors.obj (.const:tUsbRequestList)
+                  0000823a    0000012e     MSP-EXP430F5529_UE.lib : Settings.obj (.const:.string)
+                  00008368    00000122                            : Settings.obj (.const:sunglasses)
+                  0000848a    000000f4     descriptors.obj (.const:abromStringDescriptor)
+                  0000857e    000000c2     MSP-EXP430F5529_UE.lib : Settings.obj (.const:lightbulb)
+                  00008640    000000a6     Lab4.1.obj (.const:.string)
+                  000086e6    0000008c     lab4a.obj (.const:.string)
+                  00008772    00000082     descriptors.obj (.const)
+                  000087f4    00000034     descriptors.obj (.const:abromReportDescriptor)
+                  00008828    00000030     descriptors.obj (.const:stUsbHandle)
+                  00008858    00000020     MSP-EXP430F5529_UE.lib : Settings.obj (.const:AccelCalibrateText$1)
+                  00008878    0000001a     Lab4.3.obj (.const:.string)
+                  00008892    00000018     MSP-EXP430F5529_UE.lib : Settings.obj (.const:settingsMenuText)
+                  000088aa    00000014     lab4a.obj (.const:mainMenu)
+                  000088be    00000012     descriptors.obj (.const:abromDeviceDescriptor)
+                  000088d0    00000010     MSP-EXP430F5529_UE.lib : UsbMscScsi.obj (.const)
+
+.int42     0    0000ffd4    00000002     
+                  0000ffd4    00000002     MSP-EXP430F5529_UE.lib : HAL_Buttons.obj (.int42)
+
+.int46     0    0000ffdc    00000002     
+                  0000ffdc    00000002     Lab4.3.obj (.int46)
+
+.int47     0    0000ffde    00000002     
+                  0000ffde    00000002     MSP-EXP430F5529_UE.lib : HAL_Buttons.obj (.int47)
+
+.int51     0    0000ffe6    00000002     
+                  0000ffe6    00000002     UsbIsr.obj (.int51)
+
+.int53     0    0000ffea    00000002     
+                  0000ffea    00000002     lab4a.obj (.int53)
+
+.int54     0    0000ffec    00000002     
+                  0000ffec    00000002     MSP-EXP430F5529_UE.lib : HAL_Wheel.obj (.int54)
+
+.int57     0    0000fff2    00000002     
+                  0000fff2    00000002     MSP-EXP430F5529_UE.lib : HAL_Buttons.obj (.int57)
+
+.reset     0    0000fffe    00000002     
+                  0000fffe    00000002     rts430xl.lib : boot.obj (.reset)
+
+
+GLOBAL SYMBOLS: SORTED ALPHABETICALLY BY Name 
+
+address    name
+--------   ----
+00002400   .bss
+ffffffff   .text
+00000700   ADC12CTL0
+00000701   ADC12CTL0_H
+00000700   ADC12CTL0_L
+00000702   ADC12CTL1
+00000703   ADC12CTL1_H
+00000702   ADC12CTL1_L
+00000704   ADC12CTL2
+00000705   ADC12CTL2_H
+00000704   ADC12CTL2_L
+0000070c   ADC12IE
+0000070d   ADC12IE_H
+0000070c   ADC12IE_L
+0000070a   ADC12IFG
+0000070b   ADC12IFG_H
+0000070a   ADC12IFG_L
+0000070e   ADC12IV
+0000070f   ADC12IV_H
+0000070e   ADC12IV_L
+00000710   ADC12MCTL0
+00000711   ADC12MCTL1
+0000071a   ADC12MCTL10
+0000071b   ADC12MCTL11
+0000071c   ADC12MCTL12
+0000071d   ADC12MCTL13
+0000071e   ADC12MCTL14
+0000071f   ADC12MCTL15
+00000712   ADC12MCTL2
+00000713   ADC12MCTL3
+00000714   ADC12MCTL4
+00000715   ADC12MCTL5
+00000716   ADC12MCTL6
+00000717   ADC12MCTL7
+00000718   ADC12MCTL8
+00000719   ADC12MCTL9
+00000720   ADC12MEM0
+00000721   ADC12MEM0_H
+00000720   ADC12MEM0_L
+00000722   ADC12MEM1
+00000734   ADC12MEM10
+00000735   ADC12MEM10_H
+00000734   ADC12MEM10_L
+00000736   ADC12MEM11
+00000737   ADC12MEM11_H
+00000736   ADC12MEM11_L
+00000738   ADC12MEM12
+00000739   ADC12MEM12_H
+00000738   ADC12MEM12_L
+0000073a   ADC12MEM13
+0000073b   ADC12MEM13_H
+0000073a   ADC12MEM13_L
+0000073c   ADC12MEM14
+0000073d   ADC12MEM14_H
+0000073c   ADC12MEM14_L
+0000073e   ADC12MEM15
+0000073f   ADC12MEM15_H
+0000073e   ADC12MEM15_L
+00000723   ADC12MEM1_H
+00000722   ADC12MEM1_L
+00000724   ADC12MEM2
+00000725   ADC12MEM2_H
+00000724   ADC12MEM2_L
+00000726   ADC12MEM3
+00000727   ADC12MEM3_H
+00000726   ADC12MEM3_L
+00000728   ADC12MEM4
+00000729   ADC12MEM4_H
+00000728   ADC12MEM4_L
+0000072a   ADC12MEM5
+0000072b   ADC12MEM5_H
+0000072a   ADC12MEM5_L
+0000072c   ADC12MEM6
+0000072d   ADC12MEM6_H
+0000072c   ADC12MEM6_L
+0000072e   ADC12MEM7
+0000072f   ADC12MEM7_H
+0000072e   ADC12MEM7_L
+00000730   ADC12MEM8
+00000731   ADC12MEM8_H
+00000730   ADC12MEM8_L
+00000732   ADC12MEM9
+00000733   ADC12MEM9_H
+00000732   ADC12MEM9_L
+00004634   ADC12_ISR
+0000620e   AcquireSignal
+0000660e   BacklightSetting
+0000582a   Board_init
+00006b3e   Board_ledOff
+00006b8c   Board_ledOn
+0000785e   Buttons_init
+000077d2   Buttons_interruptEnable
+0000783e   Buttons_startWDT
+00007940   C$$EXIT
+000008c0   CBCTL0
+000008c1   CBCTL0_H
+000008c0   CBCTL0_L
+000008c2   CBCTL1
+000008c3   CBCTL1_H
+000008c2   CBCTL1_L
+000008c4   CBCTL2
+000008c5   CBCTL2_H
+000008c4   CBCTL2_L
+000008c6   CBCTL3
+000008c7   CBCTL3_H
+000008c6   CBCTL3_L
+000008cc   CBINT
+000008cd   CBINT_H
+000008cc   CBINT_L
+000008ce   CBIV
+00000150   CRCDI
+00000152   CRCDIRB
+00000153   CRCDIRB_H
+00000152   CRCDIRB_L
+00000151   CRCDI_H
+00000150   CRCDI_L
+00000154   CRCINIRES
+00000155   CRCINIRES_H
+00000154   CRCINIRES_L
+00000156   CRCRESR
+00000157   CRCRESR_H
+00000156   CRCRESR_L
+00006072   CalibrateAccel
+00007276   CdcIsReceiveInProgress
+000074e6   CdcResetData
+00005614   CdcToBufferFromHost
+00004c78   CdcToHostFromBuffer
+00007626   Cma3000_disable
+00005e20   Cma3000_init
+00006f34   Cma3000_readAccel
+00007734   Cma3000_readAccel_offset
+00006c28   Cma3000_readRegister
+0000786c   Cma3000_setAccel_offset
+00006c72   Cma3000_writeRegister
+00002b51   Cma3000_xAccel
+00002b54   Cma3000_xAccel_offset
+00002b52   Cma3000_yAccel
+00002b55   Cma3000_yAccel_offset
+00002b53   Cma3000_zAccel
+00002b56   Cma3000_zAccel_offset
+0000641e   ContrastSetting
+00006294   CopyUsbToBuff
+00000510   DMA0CTL
+00000511   DMA0CTL_H
+00000510   DMA0CTL_L
+00000516   DMA0DA
+00000516   DMA0DAL
+00000512   DMA0SA
+00000512   DMA0SAL
+0000051a   DMA0SZ
+00000520   DMA1CTL
+00000521   DMA1CTL_H
+00000520   DMA1CTL_L
+00000526   DMA1DA
+00000526   DMA1DAL
+00000522   DMA1SA
+00000522   DMA1SAL
+0000052a   DMA1SZ
+00000530   DMA2CTL
+00000531   DMA2CTL_H
+00000530   DMA2CTL_L
+00000536   DMA2DA
+00000536   DMA2DAL
+00000532   DMA2SA
+00000532   DMA2SAL
+0000053a   DMA2SZ
+00000500   DMACTL0
+00000501   DMACTL0_H
+00000500   DMACTL0_L
+00000502   DMACTL1
+00000503   DMACTL1_H
+00000502   DMACTL1_L
+00000504   DMACTL2
+00000505   DMACTL2_H
+00000504   DMACTL2_L
+00000506   DMACTL3
+00000507   DMACTL3_H
+00000506   DMACTL3_L
+00000508   DMACTL4
+00000509   DMACTL4_H
+00000508   DMACTL4_L
+0000050e   DMAIV
+0000050f   DMAIV_H
+0000050e   DMAIV_L
+000073a2   Dogs102x6_backlightInit
+000060fc   Dogs102x6_charDraw
+000054d4   Dogs102x6_charDrawXY
+00006d06   Dogs102x6_clearImage
+000071a0   Dogs102x6_clearScreen
+00005ac0   Dogs102x6_horizontalLineDraw
+00006f74   Dogs102x6_imageDraw
+00006596   Dogs102x6_init
+00002736   Dogs102x6_initMacro
+0000639c   Dogs102x6_pixelDraw
+00006a92   Dogs102x6_setAddress
+00007034   Dogs102x6_setBacklight
+000072a8   Dogs102x6_setContrast
+0000651c   Dogs102x6_stringDraw
+00004af6   Dogs102x6_verticalLineDraw
+0000712c   Dogs102x6_writeCommand
+00006766   Dogs102x6_writeData
+00006cbc   DrawBox
+000072da   DrawGrid
+000075b4   DrawLine_x
+000075da   DrawLine_y
+00005d82   Draw_LCD_CMA3000
+00004772   Draw_LCD_CMA3000_vector
+00000140   FCTL1
+00000141   FCTL1_H
+00000140   FCTL1_L
+00000144   FCTL3
+00000145   FCTL3_H
+00000144   FCTL3_L
+00000146   FCTL4
+00000147   FCTL4_H
+00000146   FCTL4_L
+0000774c   Get_MaxLUN
+000078e2   Handler_InFeature
+00007948   Handler_InReport
+00007402   Handler_SetLineCoding0
+00007430   Handler_SetLineCoding1
+0000745e   Handler_SetLineCoding2
+00006318   HidCopyUsbToBuff
+0000730c   HidIsReceiveInProgress
+00007510   HidResetData
+00005222   HidToBufferFromHost
+00004f54   HidToHostFromBuffer
+000076ca   IEP0InterruptHandler
+000078ba   I_ASR
+000078c4   I_LSL
+000078ce   I_LSR
+0000590e   Init_FLL
+0000733e   Init_FLL_Settle
+00007242   LEDTest
+00007168   LFXT_Start
+000070e8   L_LSL_1
+000070c4   L_LSL_10
+000070c0   L_LSL_11
+000070bc   L_LSL_12
+000070b8   L_LSL_13
+000070b4   L_LSL_14
+000070b0   L_LSL_15
+000070e4   L_LSL_2
+000070e0   L_LSL_3
+000070dc   L_LSL_4
+000070d8   L_LSL_5
+000070d4   L_LSL_6
+000070d0   L_LSL_7
+000070cc   L_LSL_8
+000070c8   L_LSL_9
+00007126   L_LSR_1
+00007102   L_LSR_10
+000070fe   L_LSR_11
+000070fa   L_LSR_12
+000070f6   L_LSR_13
+000070f2   L_LSR_14
+000070ee   L_LSR_15
+00007122   L_LSR_2
+0000711e   L_LSR_3
+0000711a   L_LSR_4
+00007116   L_LSR_5
+00007112   L_LSR_6
+0000710e   L_LSR_7
+0000710a   L_LSR_8
+00007106   L_LSR_9
+000004c4   MAC
+000004da   MAC32H
+000004db   MAC32H_H
+000004da   MAC32H_L
+000004d8   MAC32L
+000004d9   MAC32L_H
+000004d8   MAC32L_L
+000004c6   MACS
+000004de   MACS32H
+000004df   MACS32H_H
+000004de   MACS32H_L
+000004dc   MACS32L
+000004dd   MACS32L_H
+000004dc   MACS32L_L
+000004c7   MACS_H
+000004c6   MACS_L
+000004c5   MAC_H
+000004c4   MAC_L
+000004c0   MPY
+000004ec   MPY32CTL0
+000004ed   MPY32CTL0_H
+000004ec   MPY32CTL0_L
+000004d2   MPY32H
+000004d3   MPY32H_H
+000004d2   MPY32H_L
+000004d0   MPY32L
+000004d1   MPY32L_H
+000004d0   MPY32L_L
+000004c2   MPYS
+000004d6   MPYS32H
+000004d7   MPYS32H_H
+000004d6   MPYS32H_L
+000004d4   MPYS32L
+000004d5   MPYS32L_H
+000004d4   MPYS32L_L
+000004c3   MPYS_H
+000004c2   MPYS_L
+000004c1   MPY_H
+000004c0   MPY_L
+00004958   MSCFromHostToBuffer
+000050c0   MSCToHostFromBuffer
+00002766   McsCbw
+00002786   McsCsw
+00005c40   Menu_active
+00005f52   MotionApp
+000027f0   MscControl
+000067d4   MscCopyUsbToBuff
+000027d4   MscReadControl
+0000748c   MscResetData
+000027b4   MscWriteControl
+000078fa   Msc_ResetFlags
+0000787a   Msc_ResetStateMachine
+000068aa   Msc_ResetStruct
+00006bda   OEP0InterruptHandler
+000004c8   OP2
+000004e2   OP2H
+000004e3   OP2H_H
+000004e2   OP2H_L
+000004e0   OP2L
+000004e1   OP2L_H
+000004e0   OP2L_L
+000004c9   OP2_H
+000004c8   OP2_L
+0000020e   P1IV
+0000021e   P2IV
+000001e0   P4MAP01
+000001e1   P4MAP01_H
+000001e0   P4MAP01_L
+000001e2   P4MAP23
+000001e3   P4MAP23_H
+000001e2   P4MAP23_L
+000001e4   P4MAP45
+000001e5   P4MAP45_H
+000001e4   P4MAP45_L
+000001e6   P4MAP67
+000001e7   P4MAP67_H
+000001e6   P4MAP67_L
+00000204   PADIR
+00000205   PADIR_H
+00000204   PADIR_L
+00000208   PADS
+00000209   PADS_H
+00000208   PADS_L
+0000021a   PAIE
+00000218   PAIES
+00000219   PAIES_H
+00000218   PAIES_L
+0000021b   PAIE_H
+0000021a   PAIE_L
+0000021c   PAIFG
+0000021d   PAIFG_H
+0000021c   PAIFG_L
+00000200   PAIN
+00000201   PAIN_H
+00000200   PAIN_L
+00000202   PAOUT
+00000203   PAOUT_H
+00000202   PAOUT_L
+00000206   PAREN
+00000207   PAREN_H
+00000206   PAREN_L
+0000020a   PASEL
+0000020b   PASEL_H
+0000020a   PASEL_L
+00000224   PBDIR
+00000225   PBDIR_H
+00000224   PBDIR_L
+00000228   PBDS
+00000229   PBDS_H
+00000228   PBDS_L
+00000220   PBIN
+00000221   PBIN_H
+00000220   PBIN_L
+00000222   PBOUT
+00000223   PBOUT_H
+00000222   PBOUT_L
+00000226   PBREN
+00000227   PBREN_H
+00000226   PBREN_L
+0000022a   PBSEL
+0000022b   PBSEL_H
+0000022a   PBSEL_L
+00000244   PCDIR
+00000245   PCDIR_H
+00000244   PCDIR_L
+00000248   PCDS
+00000249   PCDS_H
+00000248   PCDS_L
+00000240   PCIN
+00000241   PCIN_H
+00000240   PCIN_L
+00000242   PCOUT
+00000243   PCOUT_H
+00000242   PCOUT_L
+00000246   PCREN
+00000247   PCREN_H
+00000246   PCREN_L
+0000024a   PCSEL
+0000024b   PCSEL_H
+0000024a   PCSEL_L
+00000264   PDDIR
+00000265   PDDIR_H
+00000264   PDDIR_L
+00000268   PDDS
+00000269   PDDS_H
+00000268   PDDS_L
+00000260   PDIN
+00000261   PDIN_H
+00000260   PDIN_L
+00000262   PDOUT
+00000263   PDOUT_H
+00000262   PDOUT_L
+00000266   PDREN
+00000267   PDREN_H
+00000266   PDREN_L
+0000026a   PDSEL
+0000026b   PDSEL_H
+0000026a   PDSEL_L
+00000324   PJDIR
+00000325   PJDIR_H
+00000324   PJDIR_L
+00000328   PJDS
+00000329   PJDS_H
+00000328   PJDS_L
+00000320   PJIN
+00000321   PJIN_H
+00000320   PJIN_L
+00000322   PJOUT
+00000323   PJOUT_H
+00000322   PJOUT_L
+00000326   PJREN
+00000327   PJREN_H
+00000326   PJREN_L
+00000130   PM5CTL0
+00000131   PM5CTL0_H
+00000130   PM5CTL0_L
+000001c2   PMAPCTL
+000001c3   PMAPCTL_H
+000001c2   PMAPCTL_L
+000001c0   PMAPKEYID
+000001c1   PMAPKEYID_H
+000001c0   PMAPKEYID_L
+00000120   PMMCTL0
+00000121   PMMCTL0_H
+00000120   PMMCTL0_L
+00000122   PMMCTL1
+00000123   PMMCTL1_H
+00000122   PMMCTL1_L
+0000012c   PMMIFG
+0000012d   PMMIFG_H
+0000012c   PMMIFG_L
+0000012e   PMMRIE
+0000012f   PMMRIE_H
+0000012e   PMMRIE_L
+00006d4e   PWRVBUSoffHandler
+000071d6   PWRVBUSonHandler
+00006e26   PlotSignal
+00004578   Port1_ISR
+000045b4   Port2_ISR
+00000158   RCCTL0
+00000159   RCCTL0_H
+00000158   RCCTL0_L
+000001b0   REFCTL0
+000001b1   REFCTL0_H
+000001b0   REFCTL0_L
+000004e4   RES0
+000004e5   RES0_H
+000004e4   RES0_L
+000004e6   RES1
+000004e7   RES1_H
+000004e6   RES1_L
+000004e8   RES2
+000004e9   RES2_H
+000004e8   RES2_L
+000004ea   RES3
+000004eb   RES3_H
+000004ea   RES3_L
+000004cc   RESHI
+000004cd   RESHI_H
+000004cc   RESHI_L
+000004ca   RESLO
+000004cb   RESLO_H
+000004ca   RESLO_L
+000004ba   RTCADOWDAY
+000004bb   RTCADOWDAY_H
+000004ba   RTCADOWDAY_L
+000004b8   RTCAMINHR
+000004b9   RTCAMINHR_H
+000004b8   RTCAMINHR_L
+000004a0   RTCCTL01
+000004a1   RTCCTL01_H
+000004a0   RTCCTL01_L
+000004a2   RTCCTL23
+000004a3   RTCCTL23_H
+000004a2   RTCCTL23_L
+000004b4   RTCDATE
+000004b5   RTCDATE_H
+000004b4   RTCDATE_L
+000004ae   RTCIV
+000004ac   RTCPS
+000004a8   RTCPS0CTL
+000004a9   RTCPS0CTL_H
+000004a8   RTCPS0CTL_L
+000004aa   RTCPS1CTL
+000004ab   RTCPS1CTL_H
+000004aa   RTCPS1CTL_L
+000004ad   RTCPS_H
+000004ac   RTCPS_L
+000004b0   RTCTIM0
+000004b1   RTCTIM0_H
+000004b0   RTCTIM0_L
+000004b2   RTCTIM1
+000004b3   RTCTIM1_H
+000004b2   RTCTIM1_L
+000004b6   RTCYEAR
+000004b7   RTCYEAR_H
+000004b6   RTCYEAR_L
+000088d0   Report_Luns
+00002794   RequestSenseResponse
+0000690e   Reset_RequestSenseResponse
+00002b50   RevID
+00000100   SFRIE1
+00000101   SFRIE1_H
+00000100   SFRIE1_L
+00000102   SFRIFG1
+00000103   SFRIFG1_H
+00000102   SFRIFG1_L
+00000104   SFRRPCR
+00000105   SFRRPCR_H
+00000104   SFRRPCR_L
+000004ce   SUMEXT
+000004cf   SUMEXT_H
+000004ce   SUMEXT_L
+00000124   SVSMHCTL
+00000125   SVSMHCTL_H
+00000124   SVSMHCTL_L
+00000128   SVSMIO
+00000129   SVSMIO_H
+00000128   SVSMIO_L
+00000126   SVSMLCTL
+00000127   SVSMLCTL_H
+00000126   SVSMLCTL_L
+00000198   SYSBERRIV
+00000199   SYSBERRIV_H
+00000198   SYSBERRIV_L
+00000182   SYSBSLC
+00000183   SYSBSLC_H
+00000182   SYSBSLC_L
+00000180   SYSCTL
+00000181   SYSCTL_H
+00000180   SYSCTL_L
+00000186   SYSJMBC
+00000187   SYSJMBC_H
+00000186   SYSJMBC_L
+00000188   SYSJMBI0
+00000189   SYSJMBI0_H
+00000188   SYSJMBI0_L
+0000018a   SYSJMBI1
+0000018b   SYSJMBI1_H
+0000018a   SYSJMBI1_L
+0000018c   SYSJMBO0
+0000018d   SYSJMBO0_H
+0000018c   SYSJMBO0_L
+0000018e   SYSJMBO1
+0000018f   SYSJMBO1_H
+0000018e   SYSJMBO1_L
+0000019e   SYSRSTIV
+0000019f   SYSRSTIV_H
+0000019e   SYSRSTIV_L
+0000019c   SYSSNIV
+0000019d   SYSSNIV_H
+0000019c   SYSSNIV_L
+0000019a   SYSUNIV
+0000019b   SYSUNIV_H
+0000019a   SYSUNIV_L
+00005ce2   ScopeApp
+00002908   Scsi_Mode_Sense_10
+00002904   Scsi_Mode_Sense_6
+000028fc   Scsi_Read_Capacity_10
+00002910   Scsi_Read_Format_Capacity
+00002762   Scsi_Residue
+000027fa   Scsi_Standard_Inquiry_Data
+00005742   SetFreq
+00007072   SetVCore
+000069d6   Settings
+00006d96   SetupPacketInterruptHandler
+00000352   TA0CCR0
+00000354   TA0CCR1
+00000356   TA0CCR2
+00000358   TA0CCR3
+0000035a   TA0CCR4
+00000342   TA0CCTL0
+00000344   TA0CCTL1
+00000346   TA0CCTL2
+00000348   TA0CCTL3
+0000034a   TA0CCTL4
+00000340   TA0CTL
+00000360   TA0EX0
+0000036e   TA0IV
+00000350   TA0R
+00000392   TA1CCR0
+00000394   TA1CCR1
+00000396   TA1CCR2
+00000382   TA1CCTL0
+00000384   TA1CCTL1
+00000386   TA1CCTL2
+00000380   TA1CTL
+000003a0   TA1EX0
+000003ae   TA1IV
+00000390   TA1R
+00000412   TA2CCR0
+00000414   TA2CCR1
+00000416   TA2CCR2
+00000402   TA2CCTL0
+00000404   TA2CCTL1
+00000406   TA2CCTL2
+00000400   TA2CTL
+00000420   TA2EX0
+0000042e   TA2IV
+00000410   TA2R
+000003d2   TB0CCR0
+000003d4   TB0CCR1
+000003d6   TB0CCR2
+000003d8   TB0CCR3
+000003da   TB0CCR4
+000003dc   TB0CCR5
+000003de   TB0CCR6
+000003c2   TB0CCTL0
+000003c4   TB0CCTL1
+000003c6   TB0CCTL2
+000003c8   TB0CCTL3
+000003ca   TB0CCTL4
+000003cc   TB0CCTL5
+000003ce   TB0CCTL6
+000003c0   TB0CTL
+000003e0   TB0EX0
+000003ee   TB0IV
+000003d0   TB0R
+0000794c   TIusb
+00004658   TimerA0_ISR
+000005d0   UCA0ABCTL
+000005c6   UCA0BRW
+000005c7   UCA0BRW_H
+000005c6   UCA0BRW_L
+000005c0   UCA0CTLW0
+000005c1   UCA0CTLW0_H
+000005c0   UCA0CTLW0_L
+000005dc   UCA0ICTL
+000005dd   UCA0ICTL_H
+000005dc   UCA0ICTL_L
+000005d2   UCA0IRCTL
+000005d3   UCA0IRCTL_H
+000005d2   UCA0IRCTL_L
+000005de   UCA0IV
+000005c8   UCA0MCTL
+000005cc   UCA0RXBUF
+000005ca   UCA0STAT
+000005ce   UCA0TXBUF
+00000610   UCA1ABCTL
+00000606   UCA1BRW
+00000607   UCA1BRW_H
+00000606   UCA1BRW_L
+00000600   UCA1CTLW0
+00000601   UCA1CTLW0_H
+00000600   UCA1CTLW0_L
+0000061c   UCA1ICTL
+0000061d   UCA1ICTL_H
+0000061c   UCA1ICTL_L
+00000612   UCA1IRCTL
+00000613   UCA1IRCTL_H
+00000612   UCA1IRCTL_L
+0000061e   UCA1IV
+00000608   UCA1MCTL
+0000060c   UCA1RXBUF
+0000060a   UCA1STAT
+0000060e   UCA1TXBUF
+000005e6   UCB0BRW
+000005e7   UCB0BRW_H
+000005e6   UCB0BRW_L
+000005e0   UCB0CTLW0
+000005e1   UCB0CTLW0_H
+000005e0   UCB0CTLW0_L
+000005f0   UCB0I2COA
+000005f1   UCB0I2COA_H
+000005f0   UCB0I2COA_L
+000005f2   UCB0I2CSA
+000005f3   UCB0I2CSA_H
+000005f2   UCB0I2CSA_L
+000005fc   UCB0ICTL
+000005fd   UCB0ICTL_H
+000005fc   UCB0ICTL_L
+000005fe   UCB0IV
+000005ec   UCB0RXBUF
+000005ea   UCB0STAT
+000005ee   UCB0TXBUF
+00000626   UCB1BRW
+00000627   UCB1BRW_H
+00000626   UCB1BRW_L
+00000620   UCB1CTLW0
+00000621   UCB1CTLW0_H
+00000620   UCB1CTLW0_L
+00000630   UCB1I2COA
+00000631   UCB1I2COA_H
+00000630   UCB1I2COA_L
+00000632   UCB1I2CSA
+00000633   UCB1I2CSA_H
+00000632   UCB1I2CSA_L
+0000063c   UCB1ICTL
+0000063d   UCB1ICTL_H
+0000063c   UCB1ICTL_L
+0000063e   UCB1IV
+0000062c   UCB1RXBUF
+0000062a   UCB1STAT
+0000062e   UCB1TXBUF
+00000160   UCSCTL0
+00000161   UCSCTL0_H
+00000160   UCSCTL0_L
+00000162   UCSCTL1
+00000163   UCSCTL1_H
+00000162   UCSCTL1_L
+00000164   UCSCTL2
+00000165   UCSCTL2_H
+00000164   UCSCTL2_L
+00000166   UCSCTL3
+00000167   UCSCTL3_H
+00000166   UCSCTL3_L
+00000168   UCSCTL4
+00000169   UCSCTL4_H
+00000168   UCSCTL4_L
+0000016a   UCSCTL5
+0000016b   UCSCTL5_H
+0000016a   UCSCTL5_L
+0000016c   UCSCTL6
+0000016d   UCSCTL6_H
+0000016c   UCSCTL6_L
+0000016e   UCSCTL7
+0000016f   UCSCTL7_H
+0000016e   UCSCTL7_L
+00000170   UCSCTL8
+00000171   UCSCTL8_H
+00000170   UCSCTL8_L
+0000790c   USBCDC_handleDataReceived
+00007910   USBCDC_handleReceiveCompleted
+00007914   USBCDC_handleSendCompleted
+00000902   USBCNF
+00000903   USBCNF_H
+00000902   USBCNF_L
+0000093c   USBCTL
+0000093a   USBFN
+0000093b   USBFN_H
+0000093a   USBFN_L
+0000093f   USBFUNADR
+00007918   USBHID_handleDataReceived
+0000791c   USBHID_handleReceiveCompleted
+00007920   USBHID_handleSendCompleted
+0000093d   USBIE
+00002378   USBIEP0BUF
+000023c9   USBIEPBBAX_1
+000023d1   USBIEPBBAX_2
+000023d9   USBIEPBBAX_3
+000023e1   USBIEPBBAX_4
+000023e9   USBIEPBBAX_5
+000023f1   USBIEPBBAX_6
+000023f9   USBIEPBBAX_7
+000023cd   USBIEPBBAY_1
+000023d5   USBIEPBBAY_2
+000023dd   USBIEPBBAY_3
+000023e5   USBIEPBBAY_4
+000023ed   USBIEPBBAY_5
+000023f5   USBIEPBBAY_6
+000023fd   USBIEPBBAY_7
+000023ca   USBIEPBCTX_1
+000023d2   USBIEPBCTX_2
+000023da   USBIEPBCTX_3
+000023e2   USBIEPBCTX_4
+000023ea   USBIEPBCTX_5
+000023f2   USBIEPBCTX_6
+000023fa   USBIEPBCTX_7
+000023ce   USBIEPBCTY_1
+000023d6   USBIEPBCTY_2
+000023de   USBIEPBCTY_3
+000023e6   USBIEPBCTY_4
+000023ee   USBIEPBCTY_5
+000023f6   USBIEPBCTY_6
+000023fe   USBIEPBCTY_7
+00000920   USBIEPCNF_0
+000023c8   USBIEPCNF_1
+000023d0   USBIEPCNF_2
+000023d8   USBIEPCNF_3
+000023e0   USBIEPCNF_4
+000023e8   USBIEPCNF_5
+000023f0   USBIEPCNF_6
+000023f8   USBIEPCNF_7
+00000921   USBIEPCNT_0
+0000092e   USBIEPIE
+00000930   USBIEPIFG
+000023cf   USBIEPSIZXY_1
+000023d7   USBIEPSIZXY_2
+000023df   USBIEPSIZXY_3
+000023e7   USBIEPSIZXY_4
+000023ef   USBIEPSIZXY_5
+000023f7   USBIEPSIZXY_6
+000023ff   USBIEPSIZXY_7
+0000093e   USBIFG
+00000900   USBKEYID
+00000901   USBKEYID_H
+00000900   USBKEYID_L
+00000936   USBMAINT
+00000937   USBMAINT_H
+00000936   USBMAINT_L
+00002b30   USBMSC_config
+00007924   USBMSC_handleBufferEvent
+00006ef2   USBMSC_reset
+00002370   USBOEP0BUF
+00002389   USBOEPBBAX_1
+00002391   USBOEPBBAX_2
+00002399   USBOEPBBAX_3
+000023a1   USBOEPBBAX_4
+000023a9   USBOEPBBAX_5
+000023b1   USBOEPBBAX_6
+000023b9   USBOEPBBAX_7
+0000238d   USBOEPBBAY_1
+00002395   USBOEPBBAY_2
+0000239d   USBOEPBBAY_3
+000023a5   USBOEPBBAY_4
+000023ad   USBOEPBBAY_5
+000023b5   USBOEPBBAY_6
+000023bd   USBOEPBBAY_7
+0000238a   USBOEPBCTX_1
+00002392   USBOEPBCTX_2
+0000239a   USBOEPBCTX_3
+000023a2   USBOEPBCTX_4
+000023aa   USBOEPBCTX_5
+000023b2   USBOEPBCTX_6
+000023ba   USBOEPBCTX_7
+0000238e   USBOEPBCTY_1
+00002396   USBOEPBCTY_2
+0000239e   USBOEPBCTY_3
+000023a6   USBOEPBCTY_4
+000023ae   USBOEPBCTY_5
+000023b6   USBOEPBCTY_6
+000023be   USBOEPBCTY_7
+00000922   USBOEPCNF_0
+00002388   USBOEPCNF_1
+00002390   USBOEPCNF_2
+00002398   USBOEPCNF_3
+000023a0   USBOEPCNF_4
+000023a8   USBOEPCNF_5
+000023b0   USBOEPCNF_6
+000023b8   USBOEPCNF_7
+00000923   USBOEPCNT_0
+0000092f   USBOEPIE
+00000931   USBOEPIFG
+0000238f   USBOEPSIZXY_1
+00002397   USBOEPSIZXY_2
+0000239f   USBOEPSIZXY_3
+000023a7   USBOEPSIZXY_4
+000023af   USBOEPSIZXY_5
+000023b7   USBOEPSIZXY_6
+000023bf   USBOEPSIZXY_7
+00000904   USBPHYCTL
+00000905   USBPHYCTL_H
+00000904   USBPHYCTL_L
+00000910   USBPLLCTL
+00000911   USBPLLCTL_H
+00000910   USBPLLCTL_L
+00000912   USBPLLDIVB
+00000913   USBPLLDIVB_H
+00000912   USBPLLDIVB_L
+00000914   USBPLLIR
+00000915   USBPLLIR_H
+00000914   USBPLLIR_L
+00000908   USBPWRCTL
+00000909   USBPWRCTL_H
+00000908   USBPWRCTL_L
+00001c00   USBSTABUFF
+00002380   USBSUBLK
+0000236f   USBTOPBUFF
+00000938   USBTSREG
+00000939   USBTSREG_H
+00000938   USBTSREG_L
+00000932   USBVECINT
+00000933   USBVECINT_H
+00000932   USBVECINT_L
+00002b5c   USB_RX_memcpy
+00002b58   USB_TX_memcpy
+00007564   USB_connect
+00006186   USB_enable
+00007928   USB_handleClockEvent
+0000792c   USB_handleEnumCompleteEvent
+00007930   USB_handleResetEvent
+00007934   USB_handleResumeEvent
+00007938   USB_handleSuspendEvent
+0000793c   USB_handleVbusOffEvent
+000077be   USB_handleVbusOnEvent
+0000537c   USB_reset
+00007764   USB_resume
+00007370   USB_suspend
+0000464a   USCI_A1_ISR
+0000649e   Version
+0000015c   WDTCTL
+0000015d   WDTCTL_H
+0000015c   WDTCTL_L
+0000461a   WDT_ISR
+0000720c   Wheel_getPosition
+00006aea   Wheel_getValue
+00007600   Wheel_init
+00006972   WriteFlashSettings
+000073d2   XT2_Start
+00004400   __STACK_END
+000000a0   __STACK_SIZE
+00000001   __TI_args_main
+00000001   __TI_auto_init
+00000001   __TI_exit
+ffffffff   __binit__
+00002400   __bss__
+ffffffff   __c_args__
+00004660   __cinit__
+0000777c   __divu
+00002b7e   __end__
+ffffffff   __etext__
+00007792   __mpyi_f5hw
+0000764a   __mpyl_f5hw
+ffffffff   __pinit__
+0000777c   __remu
+ffffffff   __text__
+00006a36   _auto_init
+000045f0   _c_int00
+000045f0   _c_int00_noexit
+00002b68   _cleanup_ptr
+00002b6c   _dtors_ptr
+00002b60   _lock
+0000794a   _nop
+0000fffe   _reset_vector
+00004360   _stack
+000078b0   _system_pre_init
+00002b64   _unlock
+00002378   abIEP0Buffer
+00002370   abOEP0Buffer
+00002aae   abUsbRequestIncomingData
+00002aa6   abUsbRequestReturnData
+00007940   abort
+00002ab6   abramSerialStringDescriptor
+00008772   abromConfigurationDescriptorGroup
+000088be   abromDeviceDescriptor
+000087f4   abromReportDescriptor
+0000848a   abromStringDescriptor
+00002b4f   accelData
+00002ada   bEnumerationStatus
+00002ad9   bFunctionSuspended
+00002748   bMcsCommandSupported
+000027f9   bMscCbwFailed
+0000274a   bMscCbwReceived
+000028fa   bMscResetRequired
+00002ad8   bStatusAction
+000027f8   bUnitAttention
+00002734   backlight
+ffffffff   binit
+00002b70   buttonDebounce
+00002b72   buttonsPressed
+00004660   cinit
+00002735   contrast
+00002733   currentColumn
+00002732   currentPage
+00002400   dogs102x6Memory
+00005b84   eZ430App
+00002b7e   end
+ffffffff   etext
+00002a92   freq
+00004400   iUsbInterruptHandler
+00002b78   isMSCConfigured
+00002a90   level
+00002a95   lixo
+00004de6   main
+0000753a   memcpy
+0000766c   memset
+00001c00   pbXBufferAddressEp1
+00001d00   pbXBufferAddressEp2
+00001e00   pbXBufferAddressEp3
+00001c80   pbXBufferAddressEp81
+00001d80   pbXBufferAddressEp82
+00001c40   pbYBufferAddressEp1
+00001d40   pbYBufferAddressEp2
+00001cc0   pbYBufferAddressEp81
+00001dc0   pbYBufferAddressEp82
+ffffffff   pinit
+00002b74   positionData
+00002b76   positionDataOld
+00002a2a   ptr_vector_x
+00002a2e   ptr_vector_y
+00002a32   ptr_vector_z
+000027f6   sCtrlLun
+00002754   sRwbuf
+00002a36   signal_vector
+00008828   stUsbHandle
+00000920   tEndPoint0DescriptorBlock
+000023c8   tInputEndPointDescriptorBlock
+00002388   tOutputEndPointDescriptorBlock
+00002380   tSetupPacket
+000080dc   tUsbRequestList
+00002b7c   timeoutCounter
+00002a94   trigger
+000077e4   usbClearDeviceFeature
+00006842   usbClearEndpointFeature
+00007900   usbClearOEP0ByteCount
+00005eba   usbDecodeAndProcessUsbRequest
+0000784e   usbGetConfiguration
+000077f6   usbGetConfigurationDescriptor
+00007808   usbGetDeviceDescriptor
+0000758c   usbGetDeviceStatus
+000066f6   usbGetEndpointStatus
+000074ba   usbGetHidDescriptor
+000076e6   usbGetInterface
+00007700   usbGetInterfaceStatus
+00006fb4   usbGetLineCoding0
+000077a8   usbGetReport
+00007888   usbGetReportDescriptor
+00006e6a   usbGetStringDescriptor
+000078a4   usbInvalidRequest
+0000781a   usbReceiveDataPacketOnEP0
+00006dde   usbReceiveNextPacketOnOEP0
+0000768c   usbSendDataPacketOnEP0
+00006682   usbSendNextPacketOnIEP0
+00007896   usbSendZeroLengthPacketOnIEP0
+0000771a   usbSetAddress
+000076ac   usbSetConfiguration
+00007944   usbSetControlLineState
+0000782c   usbSetDeviceFeature
+00006eae   usbSetEndpointFeature
+00006ff4   usbSetInterface
+000078ea   usbSetLineCoding0
+000078f2   usbSetReport
+000078d8   usbStallEndpoint0
+00007906   usbStallOEP0
+0000291c   vector_x
+00002976   vector_y
+000029d0   vector_z
+00002a98   wBytesRemainingOnIEP0
+00002a9a   wBytesRemainingOnOEP0
+00002adc   wUsbEventMask
+0000274c   xBufferAddr
+00002750   yBufferAddr
+
+
+GLOBAL SYMBOLS: SORTED BY Symbol Address 
+
+address    name
+--------   ----
+00000001   __TI_args_main
+00000001   __TI_auto_init
+00000001   __TI_exit
+000000a0   __STACK_SIZE
+00000100   SFRIE1
+00000100   SFRIE1_L
+00000101   SFRIE1_H
+00000102   SFRIFG1
+00000102   SFRIFG1_L
+00000103   SFRIFG1_H
+00000104   SFRRPCR
+00000104   SFRRPCR_L
+00000105   SFRRPCR_H
+00000120   PMMCTL0
+00000120   PMMCTL0_L
+00000121   PMMCTL0_H
+00000122   PMMCTL1
+00000122   PMMCTL1_L
+00000123   PMMCTL1_H
+00000124   SVSMHCTL
+00000124   SVSMHCTL_L
+00000125   SVSMHCTL_H
+00000126   SVSMLCTL
+00000126   SVSMLCTL_L
+00000127   SVSMLCTL_H
+00000128   SVSMIO
+00000128   SVSMIO_L
+00000129   SVSMIO_H
+0000012c   PMMIFG
+0000012c   PMMIFG_L
+0000012d   PMMIFG_H
+0000012e   PMMRIE
+0000012e   PMMRIE_L
+0000012f   PMMRIE_H
+00000130   PM5CTL0
+00000130   PM5CTL0_L
+00000131   PM5CTL0_H
+00000140   FCTL1
+00000140   FCTL1_L
+00000141   FCTL1_H
+00000144   FCTL3
+00000144   FCTL3_L
+00000145   FCTL3_H
+00000146   FCTL4
+00000146   FCTL4_L
+00000147   FCTL4_H
+00000150   CRCDI
+00000150   CRCDI_L
+00000151   CRCDI_H
+00000152   CRCDIRB
+00000152   CRCDIRB_L
+00000153   CRCDIRB_H
+00000154   CRCINIRES
+00000154   CRCINIRES_L
+00000155   CRCINIRES_H
+00000156   CRCRESR
+00000156   CRCRESR_L
+00000157   CRCRESR_H
+00000158   RCCTL0
+00000158   RCCTL0_L
+00000159   RCCTL0_H
+0000015c   WDTCTL
+0000015c   WDTCTL_L
+0000015d   WDTCTL_H
+00000160   UCSCTL0
+00000160   UCSCTL0_L
+00000161   UCSCTL0_H
+00000162   UCSCTL1
+00000162   UCSCTL1_L
+00000163   UCSCTL1_H
+00000164   UCSCTL2
+00000164   UCSCTL2_L
+00000165   UCSCTL2_H
+00000166   UCSCTL3
+00000166   UCSCTL3_L
+00000167   UCSCTL3_H
+00000168   UCSCTL4
+00000168   UCSCTL4_L
+00000169   UCSCTL4_H
+0000016a   UCSCTL5
+0000016a   UCSCTL5_L
+0000016b   UCSCTL5_H
+0000016c   UCSCTL6
+0000016c   UCSCTL6_L
+0000016d   UCSCTL6_H
+0000016e   UCSCTL7
+0000016e   UCSCTL7_L
+0000016f   UCSCTL7_H
+00000170   UCSCTL8
+00000170   UCSCTL8_L
+00000171   UCSCTL8_H
+00000180   SYSCTL
+00000180   SYSCTL_L
+00000181   SYSCTL_H
+00000182   SYSBSLC
+00000182   SYSBSLC_L
+00000183   SYSBSLC_H
+00000186   SYSJMBC
+00000186   SYSJMBC_L
+00000187   SYSJMBC_H
+00000188   SYSJMBI0
+00000188   SYSJMBI0_L
+00000189   SYSJMBI0_H
+0000018a   SYSJMBI1
+0000018a   SYSJMBI1_L
+0000018b   SYSJMBI1_H
+0000018c   SYSJMBO0
+0000018c   SYSJMBO0_L
+0000018d   SYSJMBO0_H
+0000018e   SYSJMBO1
+0000018e   SYSJMBO1_L
+0000018f   SYSJMBO1_H
+00000198   SYSBERRIV
+00000198   SYSBERRIV_L
+00000199   SYSBERRIV_H
+0000019a   SYSUNIV
+0000019a   SYSUNIV_L
+0000019b   SYSUNIV_H
+0000019c   SYSSNIV
+0000019c   SYSSNIV_L
+0000019d   SYSSNIV_H
+0000019e   SYSRSTIV
+0000019e   SYSRSTIV_L
+0000019f   SYSRSTIV_H
+000001b0   REFCTL0
+000001b0   REFCTL0_L
+000001b1   REFCTL0_H
+000001c0   PMAPKEYID
+000001c0   PMAPKEYID_L
+000001c1   PMAPKEYID_H
+000001c2   PMAPCTL
+000001c2   PMAPCTL_L
+000001c3   PMAPCTL_H
+000001e0   P4MAP01
+000001e0   P4MAP01_L
+000001e1   P4MAP01_H
+000001e2   P4MAP23
+000001e2   P4MAP23_L
+000001e3   P4MAP23_H
+000001e4   P4MAP45
+000001e4   P4MAP45_L
+000001e5   P4MAP45_H
+000001e6   P4MAP67
+000001e6   P4MAP67_L
+000001e7   P4MAP67_H
+00000200   PAIN
+00000200   PAIN_L
+00000201   PAIN_H
+00000202   PAOUT
+00000202   PAOUT_L
+00000203   PAOUT_H
+00000204   PADIR
+00000204   PADIR_L
+00000205   PADIR_H
+00000206   PAREN
+00000206   PAREN_L
+00000207   PAREN_H
+00000208   PADS
+00000208   PADS_L
+00000209   PADS_H
+0000020a   PASEL
+0000020a   PASEL_L
+0000020b   PASEL_H
+0000020e   P1IV
+00000218   PAIES
+00000218   PAIES_L
+00000219   PAIES_H
+0000021a   PAIE
+0000021a   PAIE_L
+0000021b   PAIE_H
+0000021c   PAIFG
+0000021c   PAIFG_L
+0000021d   PAIFG_H
+0000021e   P2IV
+00000220   PBIN
+00000220   PBIN_L
+00000221   PBIN_H
+00000222   PBOUT
+00000222   PBOUT_L
+00000223   PBOUT_H
+00000224   PBDIR
+00000224   PBDIR_L
+00000225   PBDIR_H
+00000226   PBREN
+00000226   PBREN_L
+00000227   PBREN_H
+00000228   PBDS
+00000228   PBDS_L
+00000229   PBDS_H
+0000022a   PBSEL
+0000022a   PBSEL_L
+0000022b   PBSEL_H
+00000240   PCIN
+00000240   PCIN_L
+00000241   PCIN_H
+00000242   PCOUT
+00000242   PCOUT_L
+00000243   PCOUT_H
+00000244   PCDIR
+00000244   PCDIR_L
+00000245   PCDIR_H
+00000246   PCREN
+00000246   PCREN_L
+00000247   PCREN_H
+00000248   PCDS
+00000248   PCDS_L
+00000249   PCDS_H
+0000024a   PCSEL
+0000024a   PCSEL_L
+0000024b   PCSEL_H
+00000260   PDIN
+00000260   PDIN_L
+00000261   PDIN_H
+00000262   PDOUT
+00000262   PDOUT_L
+00000263   PDOUT_H
+00000264   PDDIR
+00000264   PDDIR_L
+00000265   PDDIR_H
+00000266   PDREN
+00000266   PDREN_L
+00000267   PDREN_H
+00000268   PDDS
+00000268   PDDS_L
+00000269   PDDS_H
+0000026a   PDSEL
+0000026a   PDSEL_L
+0000026b   PDSEL_H
+00000320   PJIN
+00000320   PJIN_L
+00000321   PJIN_H
+00000322   PJOUT
+00000322   PJOUT_L
+00000323   PJOUT_H
+00000324   PJDIR
+00000324   PJDIR_L
+00000325   PJDIR_H
+00000326   PJREN
+00000326   PJREN_L
+00000327   PJREN_H
+00000328   PJDS
+00000328   PJDS_L
+00000329   PJDS_H
+00000340   TA0CTL
+00000342   TA0CCTL0
+00000344   TA0CCTL1
+00000346   TA0CCTL2
+00000348   TA0CCTL3
+0000034a   TA0CCTL4
+00000350   TA0R
+00000352   TA0CCR0
+00000354   TA0CCR1
+00000356   TA0CCR2
+00000358   TA0CCR3
+0000035a   TA0CCR4
+00000360   TA0EX0
+0000036e   TA0IV
+00000380   TA1CTL
+00000382   TA1CCTL0
+00000384   TA1CCTL1
+00000386   TA1CCTL2
+00000390   TA1R
+00000392   TA1CCR0
+00000394   TA1CCR1
+00000396   TA1CCR2
+000003a0   TA1EX0
+000003ae   TA1IV
+000003c0   TB0CTL
+000003c2   TB0CCTL0
+000003c4   TB0CCTL1
+000003c6   TB0CCTL2
+000003c8   TB0CCTL3
+000003ca   TB0CCTL4
+000003cc   TB0CCTL5
+000003ce   TB0CCTL6
+000003d0   TB0R
+000003d2   TB0CCR0
+000003d4   TB0CCR1
+000003d6   TB0CCR2
+000003d8   TB0CCR3
+000003da   TB0CCR4
+000003dc   TB0CCR5
+000003de   TB0CCR6
+000003e0   TB0EX0
+000003ee   TB0IV
+00000400   TA2CTL
+00000402   TA2CCTL0
+00000404   TA2CCTL1
+00000406   TA2CCTL2
+00000410   TA2R
+00000412   TA2CCR0
+00000414   TA2CCR1
+00000416   TA2CCR2
+00000420   TA2EX0
+0000042e   TA2IV
+000004a0   RTCCTL01
+000004a0   RTCCTL01_L
+000004a1   RTCCTL01_H
+000004a2   RTCCTL23
+000004a2   RTCCTL23_L
+000004a3   RTCCTL23_H
+000004a8   RTCPS0CTL
+000004a8   RTCPS0CTL_L
+000004a9   RTCPS0CTL_H
+000004aa   RTCPS1CTL
+000004aa   RTCPS1CTL_L
+000004ab   RTCPS1CTL_H
+000004ac   RTCPS
+000004ac   RTCPS_L
+000004ad   RTCPS_H
+000004ae   RTCIV
+000004b0   RTCTIM0
+000004b0   RTCTIM0_L
+000004b1   RTCTIM0_H
+000004b2   RTCTIM1
+000004b2   RTCTIM1_L
+000004b3   RTCTIM1_H
+000004b4   RTCDATE
+000004b4   RTCDATE_L
+000004b5   RTCDATE_H
+000004b6   RTCYEAR
+000004b6   RTCYEAR_L
+000004b7   RTCYEAR_H
+000004b8   RTCAMINHR
+000004b8   RTCAMINHR_L
+000004b9   RTCAMINHR_H
+000004ba   RTCADOWDAY
+000004ba   RTCADOWDAY_L
+000004bb   RTCADOWDAY_H
+000004c0   MPY
+000004c0   MPY_L
+000004c1   MPY_H
+000004c2   MPYS
+000004c2   MPYS_L
+000004c3   MPYS_H
+000004c4   MAC
+000004c4   MAC_L
+000004c5   MAC_H
+000004c6   MACS
+000004c6   MACS_L
+000004c7   MACS_H
+000004c8   OP2
+000004c8   OP2_L
+000004c9   OP2_H
+000004ca   RESLO
+000004ca   RESLO_L
+000004cb   RESLO_H
+000004cc   RESHI
+000004cc   RESHI_L
+000004cd   RESHI_H
+000004ce   SUMEXT
+000004ce   SUMEXT_L
+000004cf   SUMEXT_H
+000004d0   MPY32L
+000004d0   MPY32L_L
+000004d1   MPY32L_H
+000004d2   MPY32H
+000004d2   MPY32H_L
+000004d3   MPY32H_H
+000004d4   MPYS32L
+000004d4   MPYS32L_L
+000004d5   MPYS32L_H
+000004d6   MPYS32H
+000004d6   MPYS32H_L
+000004d7   MPYS32H_H
+000004d8   MAC32L
+000004d8   MAC32L_L
+000004d9   MAC32L_H
+000004da   MAC32H
+000004da   MAC32H_L
+000004db   MAC32H_H
+000004dc   MACS32L
+000004dc   MACS32L_L
+000004dd   MACS32L_H
+000004de   MACS32H
+000004de   MACS32H_L
+000004df   MACS32H_H
+000004e0   OP2L
+000004e0   OP2L_L
+000004e1   OP2L_H
+000004e2   OP2H
+000004e2   OP2H_L
+000004e3   OP2H_H
+000004e4   RES0
+000004e4   RES0_L
+000004e5   RES0_H
+000004e6   RES1
+000004e6   RES1_L
+000004e7   RES1_H
+000004e8   RES2
+000004e8   RES2_L
+000004e9   RES2_H
+000004ea   RES3
+000004ea   RES3_L
+000004eb   RES3_H
+000004ec   MPY32CTL0
+000004ec   MPY32CTL0_L
+000004ed   MPY32CTL0_H
+00000500   DMACTL0
+00000500   DMACTL0_L
+00000501   DMACTL0_H
+00000502   DMACTL1
+00000502   DMACTL1_L
+00000503   DMACTL1_H
+00000504   DMACTL2
+00000504   DMACTL2_L
+00000505   DMACTL2_H
+00000506   DMACTL3
+00000506   DMACTL3_L
+00000507   DMACTL3_H
+00000508   DMACTL4
+00000508   DMACTL4_L
+00000509   DMACTL4_H
+0000050e   DMAIV
+0000050e   DMAIV_L
+0000050f   DMAIV_H
+00000510   DMA0CTL
+00000510   DMA0CTL_L
+00000511   DMA0CTL_H
+00000512   DMA0SA
+00000512   DMA0SAL
+00000516   DMA0DA
+00000516   DMA0DAL
+0000051a   DMA0SZ
+00000520   DMA1CTL
+00000520   DMA1CTL_L
+00000521   DMA1CTL_H
+00000522   DMA1SA
+00000522   DMA1SAL
+00000526   DMA1DA
+00000526   DMA1DAL
+0000052a   DMA1SZ
+00000530   DMA2CTL
+00000530   DMA2CTL_L
+00000531   DMA2CTL_H
+00000532   DMA2SA
+00000532   DMA2SAL
+00000536   DMA2DA
+00000536   DMA2DAL
+0000053a   DMA2SZ
+000005c0   UCA0CTLW0
+000005c0   UCA0CTLW0_L
+000005c1   UCA0CTLW0_H
+000005c6   UCA0BRW
+000005c6   UCA0BRW_L
+000005c7   UCA0BRW_H
+000005c8   UCA0MCTL
+000005ca   UCA0STAT
+000005cc   UCA0RXBUF
+000005ce   UCA0TXBUF
+000005d0   UCA0ABCTL
+000005d2   UCA0IRCTL
+000005d2   UCA0IRCTL_L
+000005d3   UCA0IRCTL_H
+000005dc   UCA0ICTL
+000005dc   UCA0ICTL_L
+000005dd   UCA0ICTL_H
+000005de   UCA0IV
+000005e0   UCB0CTLW0
+000005e0   UCB0CTLW0_L
+000005e1   UCB0CTLW0_H
+000005e6   UCB0BRW
+000005e6   UCB0BRW_L
+000005e7   UCB0BRW_H
+000005ea   UCB0STAT
+000005ec   UCB0RXBUF
+000005ee   UCB0TXBUF
+000005f0   UCB0I2COA
+000005f0   UCB0I2COA_L
+000005f1   UCB0I2COA_H
+000005f2   UCB0I2CSA
+000005f2   UCB0I2CSA_L
+000005f3   UCB0I2CSA_H
+000005fc   UCB0ICTL
+000005fc   UCB0ICTL_L
+000005fd   UCB0ICTL_H
+000005fe   UCB0IV
+00000600   UCA1CTLW0
+00000600   UCA1CTLW0_L
+00000601   UCA1CTLW0_H
+00000606   UCA1BRW
+00000606   UCA1BRW_L
+00000607   UCA1BRW_H
+00000608   UCA1MCTL
+0000060a   UCA1STAT
+0000060c   UCA1RXBUF
+0000060e   UCA1TXBUF
+00000610   UCA1ABCTL
+00000612   UCA1IRCTL
+00000612   UCA1IRCTL_L
+00000613   UCA1IRCTL_H
+0000061c   UCA1ICTL
+0000061c   UCA1ICTL_L
+0000061d   UCA1ICTL_H
+0000061e   UCA1IV
+00000620   UCB1CTLW0
+00000620   UCB1CTLW0_L
+00000621   UCB1CTLW0_H
+00000626   UCB1BRW
+00000626   UCB1BRW_L
+00000627   UCB1BRW_H
+0000062a   UCB1STAT
+0000062c   UCB1RXBUF
+0000062e   UCB1TXBUF
+00000630   UCB1I2COA
+00000630   UCB1I2COA_L
+00000631   UCB1I2COA_H
+00000632   UCB1I2CSA
+00000632   UCB1I2CSA_L
+00000633   UCB1I2CSA_H
+0000063c   UCB1ICTL
+0000063c   UCB1ICTL_L
+0000063d   UCB1ICTL_H
+0000063e   UCB1IV
+00000700   ADC12CTL0
+00000700   ADC12CTL0_L
+00000701   ADC12CTL0_H
+00000702   ADC12CTL1
+00000702   ADC12CTL1_L
+00000703   ADC12CTL1_H
+00000704   ADC12CTL2
+00000704   ADC12CTL2_L
+00000705   ADC12CTL2_H
+0000070a   ADC12IFG
+0000070a   ADC12IFG_L
+0000070b   ADC12IFG_H
+0000070c   ADC12IE
+0000070c   ADC12IE_L
+0000070d   ADC12IE_H
+0000070e   ADC12IV
+0000070e   ADC12IV_L
+0000070f   ADC12IV_H
+00000710   ADC12MCTL0
+00000711   ADC12MCTL1
+00000712   ADC12MCTL2
+00000713   ADC12MCTL3
+00000714   ADC12MCTL4
+00000715   ADC12MCTL5
+00000716   ADC12MCTL6
+00000717   ADC12MCTL7
+00000718   ADC12MCTL8
+00000719   ADC12MCTL9
+0000071a   ADC12MCTL10
+0000071b   ADC12MCTL11
+0000071c   ADC12MCTL12
+0000071d   ADC12MCTL13
+0000071e   ADC12MCTL14
+0000071f   ADC12MCTL15
+00000720   ADC12MEM0
+00000720   ADC12MEM0_L
+00000721   ADC12MEM0_H
+00000722   ADC12MEM1
+00000722   ADC12MEM1_L
+00000723   ADC12MEM1_H
+00000724   ADC12MEM2
+00000724   ADC12MEM2_L
+00000725   ADC12MEM2_H
+00000726   ADC12MEM3
+00000726   ADC12MEM3_L
+00000727   ADC12MEM3_H
+00000728   ADC12MEM4
+00000728   ADC12MEM4_L
+00000729   ADC12MEM4_H
+0000072a   ADC12MEM5
+0000072a   ADC12MEM5_L
+0000072b   ADC12MEM5_H
+0000072c   ADC12MEM6
+0000072c   ADC12MEM6_L
+0000072d   ADC12MEM6_H
+0000072e   ADC12MEM7
+0000072e   ADC12MEM7_L
+0000072f   ADC12MEM7_H
+00000730   ADC12MEM8
+00000730   ADC12MEM8_L
+00000731   ADC12MEM8_H
+00000732   ADC12MEM9
+00000732   ADC12MEM9_L
+00000733   ADC12MEM9_H
+00000734   ADC12MEM10
+00000734   ADC12MEM10_L
+00000735   ADC12MEM10_H
+00000736   ADC12MEM11
+00000736   ADC12MEM11_L
+00000737   ADC12MEM11_H
+00000738   ADC12MEM12
+00000738   ADC12MEM12_L
+00000739   ADC12MEM12_H
+0000073a   ADC12MEM13
+0000073a   ADC12MEM13_L
+0000073b   ADC12MEM13_H
+0000073c   ADC12MEM14
+0000073c   ADC12MEM14_L
+0000073d   ADC12MEM14_H
+0000073e   ADC12MEM15
+0000073e   ADC12MEM15_L
+0000073f   ADC12MEM15_H
+000008c0   CBCTL0
+000008c0   CBCTL0_L
+000008c1   CBCTL0_H
+000008c2   CBCTL1
+000008c2   CBCTL1_L
+000008c3   CBCTL1_H
+000008c4   CBCTL2
+000008c4   CBCTL2_L
+000008c5   CBCTL2_H
+000008c6   CBCTL3
+000008c6   CBCTL3_L
+000008c7   CBCTL3_H
+000008cc   CBINT
+000008cc   CBINT_L
+000008cd   CBINT_H
+000008ce   CBIV
+00000900   USBKEYID
+00000900   USBKEYID_L
+00000901   USBKEYID_H
+00000902   USBCNF
+00000902   USBCNF_L
+00000903   USBCNF_H
+00000904   USBPHYCTL
+00000904   USBPHYCTL_L
+00000905   USBPHYCTL_H
+00000908   USBPWRCTL
+00000908   USBPWRCTL_L
+00000909   USBPWRCTL_H
+00000910   USBPLLCTL
+00000910   USBPLLCTL_L
+00000911   USBPLLCTL_H
+00000912   USBPLLDIVB
+00000912   USBPLLDIVB_L
+00000913   USBPLLDIVB_H
+00000914   USBPLLIR
+00000914   USBPLLIR_L
+00000915   USBPLLIR_H
+00000920   USBIEPCNF_0
+00000920   tEndPoint0DescriptorBlock
+00000921   USBIEPCNT_0
+00000922   USBOEPCNF_0
+00000923   USBOEPCNT_0
+0000092e   USBIEPIE
+0000092f   USBOEPIE
+00000930   USBIEPIFG
+00000931   USBOEPIFG
+00000932   USBVECINT
+00000932   USBVECINT_L
+00000933   USBVECINT_H
+00000936   USBMAINT
+00000936   USBMAINT_L
+00000937   USBMAINT_H
+00000938   USBTSREG
+00000938   USBTSREG_L
+00000939   USBTSREG_H
+0000093a   USBFN
+0000093a   USBFN_L
+0000093b   USBFN_H
+0000093c   USBCTL
+0000093d   USBIE
+0000093e   USBIFG
+0000093f   USBFUNADR
+00001c00   USBSTABUFF
+00001c00   pbXBufferAddressEp1
+00001c40   pbYBufferAddressEp1
+00001c80   pbXBufferAddressEp81
+00001cc0   pbYBufferAddressEp81
+00001d00   pbXBufferAddressEp2
+00001d40   pbYBufferAddressEp2
+00001d80   pbXBufferAddressEp82
+00001dc0   pbYBufferAddressEp82
+00001e00   pbXBufferAddressEp3
+0000236f   USBTOPBUFF
+00002370   USBOEP0BUF
+00002370   abOEP0Buffer
+00002378   USBIEP0BUF
+00002378   abIEP0Buffer
+00002380   USBSUBLK
+00002380   tSetupPacket
+00002388   USBOEPCNF_1
+00002388   tOutputEndPointDescriptorBlock
+00002389   USBOEPBBAX_1
+0000238a   USBOEPBCTX_1
+0000238d   USBOEPBBAY_1
+0000238e   USBOEPBCTY_1
+0000238f   USBOEPSIZXY_1
+00002390   USBOEPCNF_2
+00002391   USBOEPBBAX_2
+00002392   USBOEPBCTX_2
+00002395   USBOEPBBAY_2
+00002396   USBOEPBCTY_2
+00002397   USBOEPSIZXY_2
+00002398   USBOEPCNF_3
+00002399   USBOEPBBAX_3
+0000239a   USBOEPBCTX_3
+0000239d   USBOEPBBAY_3
+0000239e   USBOEPBCTY_3
+0000239f   USBOEPSIZXY_3
+000023a0   USBOEPCNF_4
+000023a1   USBOEPBBAX_4
+000023a2   USBOEPBCTX_4
+000023a5   USBOEPBBAY_4
+000023a6   USBOEPBCTY_4
+000023a7   USBOEPSIZXY_4
+000023a8   USBOEPCNF_5
+000023a9   USBOEPBBAX_5
+000023aa   USBOEPBCTX_5
+000023ad   USBOEPBBAY_5
+000023ae   USBOEPBCTY_5
+000023af   USBOEPSIZXY_5
+000023b0   USBOEPCNF_6
+000023b1   USBOEPBBAX_6
+000023b2   USBOEPBCTX_6
+000023b5   USBOEPBBAY_6
+000023b6   USBOEPBCTY_6
+000023b7   USBOEPSIZXY_6
+000023b8   USBOEPCNF_7
+000023b9   USBOEPBBAX_7
+000023ba   USBOEPBCTX_7
+000023bd   USBOEPBBAY_7
+000023be   USBOEPBCTY_7
+000023bf   USBOEPSIZXY_7
+000023c8   USBIEPCNF_1
+000023c8   tInputEndPointDescriptorBlock
+000023c9   USBIEPBBAX_1
+000023ca   USBIEPBCTX_1
+000023cd   USBIEPBBAY_1
+000023ce   USBIEPBCTY_1
+000023cf   USBIEPSIZXY_1
+000023d0   USBIEPCNF_2
+000023d1   USBIEPBBAX_2
+000023d2   USBIEPBCTX_2
+000023d5   USBIEPBBAY_2
+000023d6   USBIEPBCTY_2
+000023d7   USBIEPSIZXY_2
+000023d8   USBIEPCNF_3
+000023d9   USBIEPBBAX_3
+000023da   USBIEPBCTX_3
+000023dd   USBIEPBBAY_3
+000023de   USBIEPBCTY_3
+000023df   USBIEPSIZXY_3
+000023e0   USBIEPCNF_4
+000023e1   USBIEPBBAX_4
+000023e2   USBIEPBCTX_4
+000023e5   USBIEPBBAY_4
+000023e6   USBIEPBCTY_4
+000023e7   USBIEPSIZXY_4
+000023e8   USBIEPCNF_5
+000023e9   USBIEPBBAX_5
+000023ea   USBIEPBCTX_5
+000023ed   USBIEPBBAY_5
+000023ee   USBIEPBCTY_5
+000023ef   USBIEPSIZXY_5
+000023f0   USBIEPCNF_6
+000023f1   USBIEPBBAX_6
+000023f2   USBIEPBCTX_6
+000023f5   USBIEPBBAY_6
+000023f6   USBIEPBCTY_6
+000023f7   USBIEPSIZXY_6
+000023f8   USBIEPCNF_7
+000023f9   USBIEPBBAX_7
+000023fa   USBIEPBCTX_7
+000023fd   USBIEPBBAY_7
+000023fe   USBIEPBCTY_7
+000023ff   USBIEPSIZXY_7
+00002400   .bss
+00002400   __bss__
+00002400   dogs102x6Memory
+00002732   currentPage
+00002733   currentColumn
+00002734   backlight
+00002735   contrast
+00002736   Dogs102x6_initMacro
+00002748   bMcsCommandSupported
+0000274a   bMscCbwReceived
+0000274c   xBufferAddr
+00002750   yBufferAddr
+00002754   sRwbuf
+00002762   Scsi_Residue
+00002766   McsCbw
+00002786   McsCsw
+00002794   RequestSenseResponse
+000027b4   MscWriteControl
+000027d4   MscReadControl
+000027f0   MscControl
+000027f6   sCtrlLun
+000027f8   bUnitAttention
+000027f9   bMscCbwFailed
+000027fa   Scsi_Standard_Inquiry_Data
+000028fa   bMscResetRequired
+000028fc   Scsi_Read_Capacity_10
+00002904   Scsi_Mode_Sense_6
+00002908   Scsi_Mode_Sense_10
+00002910   Scsi_Read_Format_Capacity
+0000291c   vector_x
+00002976   vector_y
+000029d0   vector_z
+00002a2a   ptr_vector_x
+00002a2e   ptr_vector_y
+00002a32   ptr_vector_z
+00002a36   signal_vector
+00002a90   level
+00002a92   freq
+00002a94   trigger
+00002a95   lixo
+00002a98   wBytesRemainingOnIEP0
+00002a9a   wBytesRemainingOnOEP0
+00002aa6   abUsbRequestReturnData
+00002aae   abUsbRequestIncomingData
+00002ab6   abramSerialStringDescriptor
+00002ad8   bStatusAction
+00002ad9   bFunctionSuspended
+00002ada   bEnumerationStatus
+00002adc   wUsbEventMask
+00002b30   USBMSC_config
+00002b4f   accelData
+00002b50   RevID
+00002b51   Cma3000_xAccel
+00002b52   Cma3000_yAccel
+00002b53   Cma3000_zAccel
+00002b54   Cma3000_xAccel_offset
+00002b55   Cma3000_yAccel_offset
+00002b56   Cma3000_zAccel_offset
+00002b58   USB_TX_memcpy
+00002b5c   USB_RX_memcpy
+00002b60   _lock
+00002b64   _unlock
+00002b68   _cleanup_ptr
+00002b6c   _dtors_ptr
+00002b70   buttonDebounce
+00002b72   buttonsPressed
+00002b74   positionData
+00002b76   positionDataOld
+00002b78   isMSCConfigured
+00002b7c   timeoutCounter
+00002b7e   __end__
+00002b7e   end
+00004360   _stack
+00004400   __STACK_END
+00004400   iUsbInterruptHandler
+00004578   Port1_ISR
+000045b4   Port2_ISR
+000045f0   _c_int00
+000045f0   _c_int00_noexit
+0000461a   WDT_ISR
+00004634   ADC12_ISR
+0000464a   USCI_A1_ISR
+00004658   TimerA0_ISR
+00004660   __cinit__
+00004660   cinit
+00004772   Draw_LCD_CMA3000_vector
+00004958   MSCFromHostToBuffer
+00004af6   Dogs102x6_verticalLineDraw
+00004c78   CdcToHostFromBuffer
+00004de6   main
+00004f54   HidToHostFromBuffer
+000050c0   MSCToHostFromBuffer
+00005222   HidToBufferFromHost
+0000537c   USB_reset
+000054d4   Dogs102x6_charDrawXY
+00005614   CdcToBufferFromHost
+00005742   SetFreq
+0000582a   Board_init
+0000590e   Init_FLL
+00005ac0   Dogs102x6_horizontalLineDraw
+00005b84   eZ430App
+00005c40   Menu_active
+00005ce2   ScopeApp
+00005d82   Draw_LCD_CMA3000
+00005e20   Cma3000_init
+00005eba   usbDecodeAndProcessUsbRequest
+00005f52   MotionApp
+00006072   CalibrateAccel
+000060fc   Dogs102x6_charDraw
+00006186   USB_enable
+0000620e   AcquireSignal
+00006294   CopyUsbToBuff
+00006318   HidCopyUsbToBuff
+0000639c   Dogs102x6_pixelDraw
+0000641e   ContrastSetting
+0000649e   Version
+0000651c   Dogs102x6_stringDraw
+00006596   Dogs102x6_init
+0000660e   BacklightSetting
+00006682   usbSendNextPacketOnIEP0
+000066f6   usbGetEndpointStatus
+00006766   Dogs102x6_writeData
+000067d4   MscCopyUsbToBuff
+00006842   usbClearEndpointFeature
+000068aa   Msc_ResetStruct
+0000690e   Reset_RequestSenseResponse
+00006972   WriteFlashSettings
+000069d6   Settings
+00006a36   _auto_init
+00006a92   Dogs102x6_setAddress
+00006aea   Wheel_getValue
+00006b3e   Board_ledOff
+00006b8c   Board_ledOn
+00006bda   OEP0InterruptHandler
+00006c28   Cma3000_readRegister
+00006c72   Cma3000_writeRegister
+00006cbc   DrawBox
+00006d06   Dogs102x6_clearImage
+00006d4e   PWRVBUSoffHandler
+00006d96   SetupPacketInterruptHandler
+00006dde   usbReceiveNextPacketOnOEP0
+00006e26   PlotSignal
+00006e6a   usbGetStringDescriptor
+00006eae   usbSetEndpointFeature
+00006ef2   USBMSC_reset
+00006f34   Cma3000_readAccel
+00006f74   Dogs102x6_imageDraw
+00006fb4   usbGetLineCoding0
+00006ff4   usbSetInterface
+00007034   Dogs102x6_setBacklight
+00007072   SetVCore
+000070b0   L_LSL_15
+000070b4   L_LSL_14
+000070b8   L_LSL_13
+000070bc   L_LSL_12
+000070c0   L_LSL_11
+000070c4   L_LSL_10
+000070c8   L_LSL_9
+000070cc   L_LSL_8
+000070d0   L_LSL_7
+000070d4   L_LSL_6
+000070d8   L_LSL_5
+000070dc   L_LSL_4
+000070e0   L_LSL_3
+000070e4   L_LSL_2
+000070e8   L_LSL_1
+000070ee   L_LSR_15
+000070f2   L_LSR_14
+000070f6   L_LSR_13
+000070fa   L_LSR_12
+000070fe   L_LSR_11
+00007102   L_LSR_10
+00007106   L_LSR_9
+0000710a   L_LSR_8
+0000710e   L_LSR_7
+00007112   L_LSR_6
+00007116   L_LSR_5
+0000711a   L_LSR_4
+0000711e   L_LSR_3
+00007122   L_LSR_2
+00007126   L_LSR_1
+0000712c   Dogs102x6_writeCommand
+00007168   LFXT_Start
+000071a0   Dogs102x6_clearScreen
+000071d6   PWRVBUSonHandler
+0000720c   Wheel_getPosition
+00007242   LEDTest
+00007276   CdcIsReceiveInProgress
+000072a8   Dogs102x6_setContrast
+000072da   DrawGrid
+0000730c   HidIsReceiveInProgress
+0000733e   Init_FLL_Settle
+00007370   USB_suspend
+000073a2   Dogs102x6_backlightInit
+000073d2   XT2_Start
+00007402   Handler_SetLineCoding0
+00007430   Handler_SetLineCoding1
+0000745e   Handler_SetLineCoding2
+0000748c   MscResetData
+000074ba   usbGetHidDescriptor
+000074e6   CdcResetData
+00007510   HidResetData
+0000753a   memcpy
+00007564   USB_connect
+0000758c   usbGetDeviceStatus
+000075b4   DrawLine_x
+000075da   DrawLine_y
+00007600   Wheel_init
+00007626   Cma3000_disable
+0000764a   __mpyl_f5hw
+0000766c   memset
+0000768c   usbSendDataPacketOnEP0
+000076ac   usbSetConfiguration
+000076ca   IEP0InterruptHandler
+000076e6   usbGetInterface
+00007700   usbGetInterfaceStatus
+0000771a   usbSetAddress
+00007734   Cma3000_readAccel_offset
+0000774c   Get_MaxLUN
+00007764   USB_resume
+0000777c   __divu
+0000777c   __remu
+00007792   __mpyi_f5hw
+000077a8   usbGetReport
+000077be   USB_handleVbusOnEvent
+000077d2   Buttons_interruptEnable
+000077e4   usbClearDeviceFeature
+000077f6   usbGetConfigurationDescriptor
+00007808   usbGetDeviceDescriptor
+0000781a   usbReceiveDataPacketOnEP0
+0000782c   usbSetDeviceFeature
+0000783e   Buttons_startWDT
+0000784e   usbGetConfiguration
+0000785e   Buttons_init
+0000786c   Cma3000_setAccel_offset
+0000787a   Msc_ResetStateMachine
+00007888   usbGetReportDescriptor
+00007896   usbSendZeroLengthPacketOnIEP0
+000078a4   usbInvalidRequest
+000078b0   _system_pre_init
+000078ba   I_ASR
+000078c4   I_LSL
+000078ce   I_LSR
+000078d8   usbStallEndpoint0
+000078e2   Handler_InFeature
+000078ea   usbSetLineCoding0
+000078f2   usbSetReport
+000078fa   Msc_ResetFlags
+00007900   usbClearOEP0ByteCount
+00007906   usbStallOEP0
+0000790c   USBCDC_handleDataReceived
+00007910   USBCDC_handleReceiveCompleted
+00007914   USBCDC_handleSendCompleted
+00007918   USBHID_handleDataReceived
+0000791c   USBHID_handleReceiveCompleted
+00007920   USBHID_handleSendCompleted
+00007924   USBMSC_handleBufferEvent
+00007928   USB_handleClockEvent
+0000792c   USB_handleEnumCompleteEvent
+00007930   USB_handleResetEvent
+00007934   USB_handleResumeEvent
+00007938   USB_handleSuspendEvent
+0000793c   USB_handleVbusOffEvent
+00007940   C$$EXIT
+00007940   abort
+00007944   usbSetControlLineState
+00007948   Handler_InReport
+0000794a   _nop
+0000794c   TIusb
+000080dc   tUsbRequestList
+0000848a   abromStringDescriptor
+00008772   abromConfigurationDescriptorGroup
+000087f4   abromReportDescriptor
+00008828   stUsbHandle
+000088be   abromDeviceDescriptor
+000088d0   Report_Luns
+0000fffe   _reset_vector
+ffffffff   .text
+ffffffff   __binit__
+ffffffff   __c_args__
+ffffffff   __etext__
+ffffffff   __pinit__
+ffffffff   __text__
+ffffffff   binit
+ffffffff   etext
+ffffffff   pinit
+
+[1047 symbols]

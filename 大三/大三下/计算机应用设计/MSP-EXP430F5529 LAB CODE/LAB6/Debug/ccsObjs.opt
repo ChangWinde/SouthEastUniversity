@@ -1,0 +1,1 @@
+"./USB/USB_User/usb_eventHandling.obj" "./USB/USB_User/usbConstructs.obj" "./USB/USB_User/UsbMscUser.obj" "./USB/USB_config/descriptors.obj" "./USB/USB_config/UsbIsr.obj" "./system_pre_init.obj" "./lab6.obj" "./LAB6main.obj" -l"libc.a" "../MSP-EXP430F5529_UE.lib" "../lnk_msp430f5529.cmd" "../lnk_msp430f5529_USB.cmd" "../rts430xl.lib" 
