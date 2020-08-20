@@ -1,0 +1,21 @@
+\ttl@change@i {\@ne }{chapter}{0pt}{\vspace {.5\baselineskip }\normalfont \bfseries }{第\CJKnumber {\thecontentslabel }章\quad }{}{\hspace {.5em}\titlerule *[10pt]{$\cdot $}\contentspage }\relax 
+\ttl@change@v {chapter}{}{}{}\relax 
+\contentsline {chapter}{摘\hskip 1em\relax \hskip 1em\relax 要}{I}{section*.1}% 
+\contentsline {chapter}{ABSTRACT}{II}{section*.2}% 
+\contentsline {chapter}{目\hskip 1em\relax \hskip 1em\relax 录}{III}{section*.3}% 
+\contentsline {chapter}{\numberline {1}数学公式}{1}{chapter.1}% 
+\contentsline {section}{\numberline {1.1}行内数学公式}{1}{section.1.1}% 
+\contentsline {section}{\numberline {1.2}数学公式}{1}{section.1.2}% 
+\contentsline {section}{\numberline {1.3}带有大括号的数学公式}{1}{section.1.3}% 
+\contentsline {chapter}{\numberline {2}图片}{2}{chapter.2}% 
+\contentsline {section}{\numberline {2.1}普通图片}{2}{section.2.1}% 
+\contentsline {section}{\numberline {2.2}子图}{2}{section.2.2}% 
+\contentsline {chapter}{\numberline {3}算法}{3}{chapter.3}% 
+\contentsline {chapter}{\numberline {4}列表}{4}{chapter.4}% 
+\contentsline {section}{\numberline {4.1}有序列表}{4}{section.4.1}% 
+\contentsline {section}{\numberline {4.2}无序列表}{4}{section.4.2}% 
+\contentsline {chapter}{\numberline {5}表格}{5}{chapter.5}% 
+\contentsline {chapter}{\numberline {6}论文引用}{6}{chapter.6}% 
+\contentsline {chapter}{参考文献}{7}{chapter*.8}% 
+\contentsline {chapter}{致谢}{12}{section*.11}% 
+\contentsfinish 

@@ -1,0 +1,21 @@
+\documentclass{article}
+
+\usepackage[a4paper]{geometry}
+\usepackage{graphicx}
+\usepackage{pdfpages}
+
+\pagestyle{empty}
+
+\newcommand{\mainfile}{../main.pdf}
+
+\begin{document}
+
+\includepdf[nup=1x1, noautoscale, pages={last-last}, pagecommand={%
+\begin{picture}(0,0)(-470,612.2)%
+\includegraphics{bookspine_res.pdf}%
+\end{picture}%
+}]{\mainfile}
+\newpage
+\includepdf[nup=1x1, noautoscale, page={1}, offset=-14 0]{\mainfile}
+
+\end{document}

@@ -1,0 +1,27 @@
+\documentclass{article}
+
+\renewcommand{\rmdefault}{ptm}
+
+\usepackage[a3paper, hmargin=4cm, vmargin=2cm]{geometry}
+\usepackage{graphicx}
+\usepackage{CJKutf8, CJKspace}
+\usepackage[usebaselinestretch]{CJKvert}
+
+
+\pagestyle{empty}
+
+\renewcommand{\CJKglue}{\hskip 3pt plus 0.08\baselineskip}% 修改字间距
+\newcommand{\shujitext}[2]{%
+\begin{CJK*}{UTF8}{hei}
+\CJKvert\CJKtilde\fontsize{12pt}{14pt}\selectfont% 小四号黑体
+#1 \hfill #2\hspace{3.5cm}东南大学
+\end{CJK*}
+}
+
+\newcommand{\sjlatin}[1]{\raisebox{.5em}{#1}}
+
+\begin{document}
+
+\shujitext{\sjlatin{SEUTHESIS} 宏包 \sjlatin{(}\sjlatin{1.2} 版\sjlatin{)} \sjlatin{--} 东南大学学位论文 \sjlatin{\LaTeX{}} 模板}{许~~元}
+
+\end{document}
