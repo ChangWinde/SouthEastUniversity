@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resume studentId="71119138" age="22" gender="male">
+  <name>Jun Wang</name>
+  <tel>15922393682</tel>
+  <nation>Han</nation>
+  <school>SouthEast University Nanjing</school>
+  <major>Software Engineering</major>
+  <addr>
+    <country>China</country>
+    <province>JiangSu</province>
+    <city>NanJing</city>
+    <district>JiangNin</district>
+    <detail>SEU-Tao-7</detail>
+  </addr>
+</resume>

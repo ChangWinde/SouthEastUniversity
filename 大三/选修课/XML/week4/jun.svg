@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="308" height="352" viewBox="0 0 294 352">
+  <g transform="translate(-273 -166)">
+    <rect width="294" height="275" transform="translate(273 167)" fill="#17270d"/>
+    <path d="M147,0,294,78H0Z" transform="translate(567 519) rotate(180)" fill="#17270d"/>
+    <path d="M96.5,0,193,161H0Z" transform="translate(324 221)" fill="#fff"/>
+    <path d="M65.5,0,131,109H0Z" transform="translate(355 255)" fill="#17270d"/>
+    <path d="M65.5,0,131,106H0Z" transform="translate(320 234)" fill="#17270d"/>
+    <circle cx="15" cy="15" r="15" transform="translate(365 287)" fill="#fff"/>
+    <text transform="translate(381 418)" fill="#fff" font-size="45" font-family="JCfg, PilGi">
+			<tspan x="0" y="36">AIR</tspan>
+			<tspan x="0" y="81"></tspan>
+		</text>
+  </g>
+</svg>

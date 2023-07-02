@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="qs2.xsl"?>
+<players>
+  <player>
+    <name>Vladimir MOROZOV</name>
+    <age>22</age>
+  </player>
+  <player>
+    <name>Cong HAN</name>
+    <age>29</age>
+  </player>
+  <player>
+    <name>Brandon FRAZIER</name>
+    <age>39</age>
+  </player>
+</players>

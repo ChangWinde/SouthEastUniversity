@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="query.xsl"?>
+<board>
+    <royalPlayers>
+        <player>
+            <ranking>1</ranking>
+            <name>Anna SHCHERBAKOVA</name>
+            <age>17</age>
+        </player>
+        <player>
+            <ranking>2</ranking>
+            <name>Yuma KAGIYAMA</name>
+            <age>18</age>
+        </player>
+    </royalPlayers>
+
+    <ordPlayers>
+        <player>
+            <name>Vladimir MOROZOV</name>
+            <age>22</age>
+        </player>
+        <player>
+            <name>Cong HAN</name>
+            <age>29</age>
+        </player>
+        <player>
+            <name>Brandon FRAZIER</name>
+            <age>39</age>
+        </player>
+
+    </ordPlayers>
+
+    <newPlayers>
+        <contestant>
+					Name:<name>Anna SHCHERBAKOVA</name>
+					Country:<nationality>Russia</nationality>
+					Age:<age>17</age>
+					Ranking:<ranking>1</ranking>
+            <image>https://olympics.com/beijing-2022/olympic-games/static/owg2022/img/bios/photos/1057108.jpg</image>
+            <score>
+                <shortProgramScore>90.98</shortProgramScore>
+                <freeSkatingScore>179.45</freeSkatingScore>
+                <totalScore>270.43</totalScore>
+            </score>
+        </contestant>
+        <contestant>Name:<name>Yuma KAGIYAMA</name>Country:<nationality>Japan</nationality>Age:<age>18</age>Ranking:<ranking>2</ranking>
+            <image>https://olympics.com/beijing-2022/olympic-games/static/owg2022/img/bios/photos/1038836.jpg</image>
+            <score>shortProgramScore:<shortProgramScore>90.98</shortProgramScore>freeSkatingScore:<freeSkatingScore>179.45</freeSkatingScore>totalScore:<totalScore>270.43</totalScore>
+            </score>
+        </contestant>
+        <contestant>Name:<name>Kamila VALIEVA</name>Country:<nationality>Russia</nationality>Age:<age>15</age>Ranking:<ranking>5</ranking>
+            <image>https://olympics.com/beijing-2022/olympic-games/static/owg2022/img/bios/photos/1057109.jpg</image>
+            <score>
+                <shortProgramScore>90.98</shortProgramScore>
+                <freeSkatingScore>179.45</freeSkatingScore>
+                <totalScore>270.43</totalScore>
+            </score>
+        </contestant>
+
+    </newPlayers>
+
+
+    <strongTeams>
+        <team>Ranking:<ranking>6</ranking>
+            <scores>7 8 7</scores>
+            <womanPlayer>Name:<name>Alexa KNIERIM</name>Country:<nationality>USA</nationality>Age:<age>30</age>
+                <ranking/>
+                <image>https://olympics.com/beijing-2022/olympic-games/static/owg2022/img/bios/photos/1035117.jpg</image>
+            </womanPlayer>
+            <manPlayer>Name:<name>Brandon FRAZIER</name>Country:<nationality>USA</nationality>Age:<age>39</age>
+                <ranking/>
+                <image>https://olympics.com/beijing-2022/olympic-games/static/owg2022/img/bios/photos/1035124.jpg</image>
+            </manPlayer>
+        </team>
+
+
+    </strongTeams>
+
+</board>

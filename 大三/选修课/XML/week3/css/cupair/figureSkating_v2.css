@@ -1,0 +1,52 @@
+/* 
+* 此版本，改善标题不够突出问题，为每个小块设定了字体大小 
+! 缺少背景
+! 每个卡片存在居中问题
+*/
+figureSkating {
+  margin-left: 20%;
+  margin-right: 20%;
+  padding: 3.5%;
+  /* font-family: Georgia, "Times New Roman", Times, serif; */
+  /* border: 2px rgb(19, 85, 139) solid; */
+  box-shadow: 0.03em 0.1em 0.1em 0.1em rgb(128, 127, 127);
+  position: absolute;
+  display: flex;
+  border-radius: 8px;
+  flex-direction: column;
+  font-size: 30px;
+}
+mixedPair,
+singleSki {
+
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin: 20px;
+  font-size: 20px bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+contestant {
+  padding: 1em;
+  font-size: 18px;
+  margin: 20px;
+  background-color: rgba(0, 0, 0, 0.118);
+  border-radius: 8px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0.1em 0.1em 0.1em 0 rgb(128, 127, 127);
+}
+team {
+  /* height: 100px; */
+  margin: 20px;
+  font-size: 18px;
+  padding: 2em;
+  background-color: rgba(0, 0, 0, 0.118);
+  /* border: red solid 2px; */
+  border-radius: 8px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0.1em 0.1em 0.1em 0 rgb(128, 127, 127);
+}
+image {
+  display: none;
+}

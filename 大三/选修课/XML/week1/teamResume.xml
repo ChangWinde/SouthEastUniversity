@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<teamResume>
+<teamName>Dracula</teamName>
+<headcount>2</headcount>
+<school>Southeast University</school>
+<teamMember>
+	<member>
+		<name>Yicheng.Bao</name>
+		<studentId>71119104</studentId>
+		<age>21</age>
+		<major>Software Engineering</major>
+		<tel>17721366125</tel>
+	</member>
+	<member>
+		<name>Jun.Wang</name>
+		<studentId>71119138</studentId>
+		<age>22</age>
+		<major>Software Engineering</major>
+		<tel>15922393682</tel>
+	</member>
+</teamMember>
+</teamResume>

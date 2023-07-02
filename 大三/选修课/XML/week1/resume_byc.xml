@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resume>
+<personalInfo sex="male">
+	<name>Yicheng.Bao</name>
+	<studentId>71119104</studentId>
+	<age>21</age>
+	<city>Nanjing</city>
+</personalInfo>
+<shoolInfo>
+	<school>Southeast University</school>
+	<major>Software Engineering</major>
+	<graduateYear>2023</graduateYear>
+</shoolInfo>
+</resume>
