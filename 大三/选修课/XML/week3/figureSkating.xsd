@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.w3school.com.cn" xmlns="http://www.w3school.com.cn" elementFormDefault="qualified">
+
+    <xs:element name="figureSkating">
+        <xs:complexType  mixed="true">
+            <xs:sequence>
+                <xs:element name="singleSki" type="singleCompetition" minOccurs="1" maxOccurs="2" />
+                <xs:element name="mixedPair" type="mixedCompetition" minOccurs="1"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:simpleType name="scoreList">
+        <xs:list itemType="xs:integer"/>
+    </xs:simpleType>
+
+    <xs:simpleType name="sex">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="male" />
+            <xs:enumeration value="female" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="singleCompetition" mixed="true">
+        <xs:sequence>
+            <xs:element name="contestant" minOccurs="0" maxOccurs="unbounded" />
+        </xs:sequence>
+        <xs:attribute name="number" type="xs:integer" />
+        <xs:attribute name="sex" type="sex" />
+    </xs:complexType>
+
+    <xs:complexType name="mixedCompetition" mixed="true">
+        <xs:sequence>
+            <xs:element name="team" minOccurs="1" maxOccurs="unbounded" type="team" />
+        </xs:sequence>
+        <xs:attribute name="teamNum" type="xs:integer" />
+    </xs:complexType>
+
+    <xs:complexType name="contestant" mixed="true">
+        <xs:all>
+            <xs:element name="name" type="xs:string" />
+            <xs:element name="nationality" type="xs:string" />
+            <xs:element name="age" />
+            <xs:element name="ranking" nillable="true" />
+            <xs:element name="image" type="xs:string"/>
+        </xs:all>
+    </xs:complexType>
+
+    <xs:complexType name="team" mixed="true">
+        <xs:sequence>
+            <xs:element name="ranking" />
+            <xs:element name="scores" type="scoreList"/>
+            <xs:element name="womanPlayer" type="contestant" />
+            <xs:element name="manPlayer" type="contestant" />
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

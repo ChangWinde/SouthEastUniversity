@@ -1,0 +1,45 @@
+figureSkating {
+  position: fixed;
+  left: 10%;
+  right: 10%;
+  padding: 3.5%;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 45px;
+  box-shadow: 0px 0px 40px #888888;
+  background-image: url(./back4.svg);
+}
+mixedPair,
+singleSki {
+  margin: 20px;
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 15px #ffffff;
+  border-radius: 100px;
+  background-color: #71afe558;
+}
+contestant,
+team {
+  height: 80px;
+  font-size: 20px;
+}
+
+name,
+nationality,
+age,
+ranking,
+shortProgramScore,
+freeSkatingScore,
+totalScore {
+  color: #008272;
+  font-size: 30px;
+}
+image {
+  display: none;
+}

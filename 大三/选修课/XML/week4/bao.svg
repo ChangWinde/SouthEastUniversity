@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="241" height="235" viewBox="0 0 241 235">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" y1="0.006" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f02fc2"/>
+      <stop offset="0" stop-color="#eb33c3"/>
+      <stop offset="1" stop-color="#6094ea"/>
+      <stop offset="1" stop-color="#575571"/>
+    </linearGradient>
+    <clipPath id="clip-path">
+      <rect x="123" width="112" height="235" fill="none"/>
+    </clipPath>
+    <linearGradient id="linear-gradient-2" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f02fc2"/>
+      <stop offset="1" stop-color="#6094ea"/>
+    </linearGradient>
+    <clipPath id="clip-path-2">
+      <rect x="93" width="90" height="177" fill="none"/>
+    </clipPath>
+    <linearGradient id="linear-gradient-3" y1="-0.356" y2="1.369" xlink:href="#linear-gradient-2"/>
+    <filter id="bad" x="0" y="93.5" width="71.5" height="54" filterUnits="userSpaceOnUse">
+      <feOffset dx="5" dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1.5" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g transform="translate(-128 -135)">
+    <g id="bigB" transform="translate(-2)">
+      <rect width="91" height="235" rx="28" transform="translate(195 135)" fill="url(#linear-gradient)"/>
+      <g transform="translate(136 135)" clip-path="url(#clip-path)" style="isolation: isolate">
+        <circle cx="117.5" cy="117.5" r="117.5" fill="url(#linear-gradient-2)"/>
+      </g>
+      <g transform="translate(162 162)" clip-path="url(#clip-path-2)" style="isolation: isolate">
+        <circle cx="88.5" cy="88.5" r="88.5" fill="#fff"/>
+      </g>
+      <ellipse cx="31.5" cy="68" rx="31.5" ry="68" transform="translate(207 183)" fill="url(#linear-gradient-3)"/>
+      <ellipse cx="15.5" cy="17.5" rx="15.5" ry="17.5" transform="translate(240.5 162)" fill="#fff"/>
+      <ellipse cx="15.5" cy="17.5" rx="15.5" ry="17.5" transform="translate(240.5 304)" fill="#fff"/>
+    </g>
+    <text transform="translate(270 266)" fill="#65799b" font-size="45" font-family="JCfg, PilGi">
+				<tspan x="0" y="0">bao</tspan>
+		</text>
+    <text transform="translate(198 266)" fill="#fff" font-size="45" font-family="JCfg, PilGi">
+			<tspan x="0" y="0">bad</tspan>
+		</text>
+  </g>
+</svg>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="advertisePage.xsl"?>
+<advertises>
+    <advertise>
+        <email>thisisbadbao@gmail.com</email>
+        <github>github.com/thisisbadBao</github>
+    </advertise>
+    <advertise>
+        <email>thoughts.times@gmail.com</email>
+        <github>github.com/acupofair</github>
+    </advertise>
+</advertises>

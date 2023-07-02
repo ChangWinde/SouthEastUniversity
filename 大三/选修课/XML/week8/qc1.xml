@@ -1,0 +1,23 @@
+<contestants>
+  <contestant>Name:<name>Anna SHCHERBAKOVA</name>Country:<nationality>Russia</nationality>Age:<age>17</age>Ranking:<ranking>1</ranking>
+    <image>https://olympics.com/beijing-2022/olympic-games/static/owg2022/img/bios/photos/1057108.jpg</image>
+    <score>
+      <shortProgramScore>90.98</shortProgramScore>
+      <freeSkatingScore>179.45</freeSkatingScore>
+      <totalScore>270.43</totalScore>
+    </score>
+  </contestant>
+  <contestant>Name:<name>Yuma KAGIYAMA</name>Country:<nationality>Japan</nationality>Age:<age>18</age>Ranking:<ranking>2</ranking>
+    <image>https://olympics.com/beijing-2022/olympic-games/static/owg2022/img/bios/photos/1038836.jpg</image>
+    <score>shortProgramScore:<shortProgramScore>90.98</shortProgramScore>freeSkatingScore:<freeSkatingScore>179.45</freeSkatingScore>totalScore:<totalScore>270.43</totalScore>
+    </score>
+  </contestant>
+  <contestant>Name:<name>Kamila VALIEVA</name>Country:<nationality>Russia</nationality>Age:<age>15</age>Ranking:<ranking>5</ranking>
+    <image>https://olympics.com/beijing-2022/olympic-games/static/owg2022/img/bios/photos/1057109.jpg</image>
+    <score>
+      <shortProgramScore>90.98</shortProgramScore>
+      <freeSkatingScore>179.45</freeSkatingScore>
+      <totalScore>270.43</totalScore>
+    </score>
+  </contestant>
+</contestants>

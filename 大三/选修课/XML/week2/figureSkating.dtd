@@ -1,0 +1,21 @@
+<!ELEMENT figureSkating (menSingle,womenSingle,mixedPair)>
+<!ATTLIST figureSkating year CDATA #REQUIRED>
+<!ATTLIST figureSkating location CDATA #REQUIRED>
+
+<!ELEMENT menSingle (contestant+)>
+<!ATTLIST menSingle number CDATA #REQUIRED>
+<!ELEMENT womenSingle (contestant+)>
+<!ATTLIST womenSingle number CDATA #REQUIRED>
+
+<!ELEMENT contestant (name, nationality, age, ranking, image)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT nationality (#PCDATA)>
+<!ELEMENT age (#PCDATA)>
+<!ELEMENT ranking (#PCDATA)>
+<!ELEMENT image (#PCDATA)>
+
+<!ELEMENT mixedPair (team+)>
+<!ATTLIST mixedPair teamNum CDATA #REQUIRED>
+<!ELEMENT team (ranking, womanPlayer, manPlayer)>
+<!ELEMENT womanPlayer (name, nationality, age, image)>
+<!ELEMENT manPlayer (name, nationality, age, image)>

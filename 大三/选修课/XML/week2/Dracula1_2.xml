@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE figureSkating SYSTEM "figureSkating.dtd">
+<figureSkating year="2022" location="Beijing">
+	<single number="10">
+		<contestant>
+			<name>Boyang JIN</name>
+			<nationality>China</nationality>
+			<age>24</age>
+			<ranking>9</ranking>
+			<image>https://olympics.com/beijing-2022/olympic-games/static/owg2022/img/bios/photos/1058056.jpg</image>
+		</contestant>
+		<contestant>
+			<name>Yuzuru HANYU</name>
+			<nationality>Japan</nationality>
+			<age>27</age>
+			<ranking>4</ranking>
+			<image>https://olympics.com/beijing-2022/olympic-games/static/owg2022/img/bios/photos/1038834.jpg</image>
+		</contestant>
+		<contestant>
+			<name>Nathan CHEN</name>
+			<nationality>USA</nationality>
+			<age>22</age>
+			<ranking>9</ranking>
+			<image>https://olympics.com/beijing-2022/olympic-games/static/owg2022/img/bios/photos/1035167.jpg</image>
+		</contestant>
+		<contestant>
+			<name>Yuma KAGIYAMA</name>
+			<nationality>Japan</nationality>
+			<age>18</age>
+			<ranking>2</ranking>
+			<image>https://olympics.com/beijing-2022/olympic-games/static/owg2022/img/bios/photos/1038836.jpg</image>
+		</contestant>
+		<contestant>
+			<name>Morisi KVITELASHVILI</name>
+			<nationality>Georgia</nationality>
+			<age>26</age>
+			<ranking>10</ranking>
+			<image>https://olympics.com/beijing-2022/olympic-games/static/owg2022/img/bios/photos/1036019.jpg</image>
+		</contestant>
+		<contestant>
+			<name>Anna SHCHERBAKOVA</name>
+			<nationality>Russia</nationality>
+			<age>17</age>
+			<ranking>1</ranking>
+			<image>https://olympics.com/beijing-2022/olympic-games/static/owg2022/img/bios/photos/1057108.jpg</image>
+		</contestant>
+		<contestant>
+			<name>Kaori SAKAMOTO</name>
+			<nationality>Japan</nationality>
+			<age>21</age>
+			<ranking>3</ranking>
+			<image>https://olympics.com/beijing-2022/olympic-games/static/owg2022/img/bios/photos/1045367.jpg</image>
+		</contestant>
+		<contestant>
+			<name>Kamila VALIEVA</name>
+			<nationality>Russia</nationality>
+			<age>15</age>
+			<ranking>4</ranking>
+			<image>https://olympics.com/beijing-2022/olympic-games/static/owg2022/img/bios/photos/1057109.jpg</image>
+		</contestant>
+		<contestant>
+			<name>Alysa LIU</name>
+			<nationality>USA</nationality>
+			<age>16</age>
+			<ranking>7</ranking>
+			<image>https://olympics.com/beijing-2022/olympic-games/static/owg2022/img/bios/photos/1035118.jpg</image>
+		</contestant>
+		<contestant>
+			<name>Loena HENDRICKX</name>
+			<nationality>Belgium</nationality>
+			<age>22</age>
+			<ranking>8</ranking>
+			<image>https://olympics.com/beijing-2022/olympic-games/static/owg2022/img/bios/photos/1045296.jpg</image>
+		</contestant>
+	</single>
+	<mixedPair teamNum="3">
+		<team>
+			<ranking>1</ranking>
+			<womanPlayer>
+				<name>Wenjing SUI</name>
+				<nationality>China</nationality>
+				<age>26</age>
+				<image>https://olympics.com/beijing-2022/olympic-games/static/owg2022/img/bios/photos/1058064.jpg</image>
+			</womanPlayer>
+			<manPlayer>
+				<name>Cong HAN</name>
+				<nationality>China</nationality>
+				<age>29</age>
+				<image>https://olympics.com/beijing-2022/olympic-games/static/owg2022/img/bios/photos/1058065.jpg</image>
+			</manPlayer>
+		</team>
+		<team>
+			<ranking>2</ranking>
+			<womanPlayer>
+				<name>Evgenia TARASOVA</name>
+				<nationality>ROC</nationality>
+				<age>27</age>
+				<image>https://olympics.com/beijing-2022/olympic-games/static/owg2022/img/bios/photos/1057090.jpg</image>
+			</womanPlayer>
+			<manPlayer>
+				<name>Vladimir MOROZOV</name>
+				<nationality>ROC</nationality>
+				<age>29</age>
+				<image>https://olympics.com/beijing-2022/olympic-games/static/owg2022/img/bios/photos/1057091.jpg</image>
+			</manPlayer>
+		</team>
+		<team>
+			<ranking>6</ranking>
+			<womanPlayer>
+				<name>Alexa KNIERIM</name>
+				<nationality>USA</nationality>
+				<age>30</age>
+				<image>https://olympics.com/beijing-2022/olympic-games/static/owg2022/img/bios/photos/1035117.jpg</image>
+			</womanPlayer>
+			<manPlayer>
+				<name>Brandon FRAZIER</name>
+				<nationality>USA</nationality>
+				<age>29</age>
+				<image>https://olympics.com/beijing-2022/olympic-games/static/owg2022/img/bios/photos/1035124.jpg</image>
+			</manPlayer>
+		</team>
+	</mixedPair>
+</figureSkating>
